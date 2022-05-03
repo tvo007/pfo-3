@@ -25,8 +25,11 @@ const HeroSection = () => {
         <div className="container mx-auto px-4 ">
           <div className="max-w-xl mx-auto text-center">
             <a className="mb-6 inline-block text-3xl font-bold leading-none" />
+            <h2 className="mb-1 text-4xl lg:text-5xl font-bold font-heading">
+              Hello, I am Tim Vo,
+            </h2>
             <h2 className="mb-4 text-4xl lg:text-5xl font-bold font-heading">
-              So much more than a business analytics tool
+              Full Stack Web Developer.
             </h2>
             <p className="max-w-md mx-auto mb-6 text-gray-500 leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.
