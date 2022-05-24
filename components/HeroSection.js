@@ -2,16 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="skewed-top-left">
-      <div className="skew skew-top mr-for-radius ">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 10 0 10" />
-        </svg>
-      </div>
+    <section id='home' className="skewed-top-left">
       <div className="skew skew-top ml-for-radius ">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"

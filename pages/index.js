@@ -1,4 +1,3 @@
-
 import AboutContent from '../components/AboutSection';
 import ContactSection from '../components/ContactSection';
 import FooterSection from '../components/FooterSection';

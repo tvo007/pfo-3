@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <section>
+    <section id='about'>
       <div className="skew skew-top mr-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"

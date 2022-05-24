@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import facebook from '../assets/social/facebook-purple.svg';
 import instagram from '../assets/social/instagram-purple.svg';
 import twitter from '../assets/social/twitter-purple.svg';
+import {Link as ScrollLink} from 'react-scroll';
 
 const NavSection = () => {
   const [isOpen, setIsOpen] = useState (false);
@@ -15,6 +16,10 @@ const NavSection = () => {
             className="navbar-burger flex items-center text-gray-400 p-3"
             onClick={() => setIsOpen (true)}
           >
+            {/* <button
+            className="navbar-burger flex items-center text-gray-400 ml-[-5rem] fixed"
+            onClick={() => setIsOpen (true)}
+          > */}
             <svg
               className="block h-4 w-4 fill-current"
               viewBox="0 0 20 20"
@@ -27,9 +32,17 @@ const NavSection = () => {
         </div>
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
-            <a className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer">
+            <ScrollLink
+              to={'home'}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1200}
+              className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer"
+            >
+
               Home
-            </a>
+            </ScrollLink>
           </li>
           <li className="text-gray-300">
             <svg
@@ -48,9 +61,17 @@ const NavSection = () => {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer">
+            <ScrollLink
+              to={'about'}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1200}
+              className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer"
+            >
+
               About
-            </a>
+            </ScrollLink>
           </li>
           <li className="text-gray-300">
             <svg
@@ -69,9 +90,17 @@ const NavSection = () => {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer">
+            <ScrollLink
+              to={'projects'}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1200}
+              className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer"
+            >
+
               Projects
-            </a>
+            </ScrollLink>
           </li>
           <li className="text-gray-300">
             <svg
@@ -90,9 +119,16 @@ const NavSection = () => {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer">
+            <ScrollLink
+              to={'contact'}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1200}
+              className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer"
+            >
               Contact
-            </a>
+            </ScrollLink>
           </li>
         </ul>
 
@@ -127,31 +163,63 @@ const NavSection = () => {
           <div>
             <ul>
               <li className="mb-1 cursor-pointer">
-                <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded">
+                <ScrollLink
+                  to={'home'}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={1200}
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
+                >
                   Home
-                </a>
+                </ScrollLink>
               </li>
               <li className="mb-1 cursor-pointer">
-                <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded">
+                <ScrollLink
+                  activeClass="active"
+                  to={'about'}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={1200}
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
+                >
                   About
-                </a>
+
+                </ScrollLink>
               </li>
               <li className="mb-1 cursor-pointer">
-                <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded">
+                <ScrollLink
+                  activeClass="active"
+                  to={'projects'}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={1200}
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
+                >
                   Projects
-                </a>
+                </ScrollLink>
               </li>
               <li className="mb-1 cursor-pointer">
-                <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded">
+                <ScrollLink
+                  activeClass="active"
+                  to={'contact'}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={1200}
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
+                >
                   Contact
-                </a>
+                </ScrollLink>
               </li>
 
             </ul>
           </div>
           <div className="mt-auto">
 
-            <p className="my-4 text-xs text-center text-gray-400">
+            <div className="my-4 text-xs text-center text-gray-400">
               <span>© 2022 All rights reserved.</span>
               <div className="text-center pt-5">
                 <a className="inline-block px-1">
@@ -167,7 +235,7 @@ const NavSection = () => {
 
                 </a>
               </div>
-            </p>
+            </div>
           </div>
         </nav>
       </div>

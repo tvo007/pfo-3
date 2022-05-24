@@ -60,7 +60,10 @@ const BottomSkew = () => {
 const ProjectsSection = () => {
   const {trickify, mugbucket, gizmos} = projects;
   return (
-    <section className="skewed-top-left skewed-bottom-right bg-gray-50">
+    <section
+      id="projects"
+      className="skewed-top-left skewed-bottom-right bg-gray-50"
+    >
 
       <TopSkew />
       <div className="py-20 bg-gray-900 radius-for-skewed min-h-[150vh]">
