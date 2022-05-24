@@ -1,8 +1,9 @@
 import React from 'react';
+import {Link as ScrollLink} from 'react-scroll';
 
 const HeroSection = () => {
   return (
-    <section id='home' className="skewed-top-left">
+    <section id="home" className="skewed-top-left">
       <div className="skew skew-top ml-for-radius ">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
@@ -25,9 +26,16 @@ const HeroSection = () => {
             <p className="max-w-md mx-auto mb-6 text-gray-500 leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.
             </p>
-            <a className="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200 cursor-pointer">
+            <ScrollLink
+              to={'about'}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1200}
+              className="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200 cursor-pointer"
+            >
               View My Works
-            </a>
+            </ScrollLink>
           </div>
         </div>
       </div>
