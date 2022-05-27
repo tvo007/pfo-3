@@ -1,35 +1,26 @@
 import Image from 'next/image';
-import React, {useState} from 'react';
-import facebook from '../assets/social/facebook-purple.svg';
-import instagram from '../assets/social/instagram-purple.svg';
-import twitter from '../assets/social/twitter-purple.svg';
+import React, {useContext, useState} from 'react';
+import facebook from '../../assets/social/facebook-purple.svg';
+import instagram from '../../assets/social/instagram-purple.svg';
+import twitter from '../../assets/social/twitter-purple.svg';
 import {Link as ScrollLink} from 'react-scroll';
+import NavContext from '../../lib/NavContext';
+import BurgerButton from './BurgerButton';
+
+//todo: programmatically account for chaning viewports on the nav button
 
 const NavSection = () => {
   const [isOpen, setIsOpen] = useState (false);
+  const {isVisible} = useContext (NavContext);
+
+  const burgerHandler = () => {
+    setIsOpen (true);
+  };
   return (
     <section className="overflow-hidden">
       <nav className="relative px-6 py-6 flex justify-between items-center bg-white">
         <a className="text-3xl font-bold leading-none" />
-        <div className="lg:hidden">
-          <button
-            className="navbar-burger flex items-center text-gray-400 p-3"
-            onClick={() => setIsOpen (true)}
-          >
-            {/* <button
-            className="navbar-burger flex items-center text-gray-400 ml-[-5rem] fixed"
-            onClick={() => setIsOpen (true)}
-          > */}
-            <svg
-              className="block h-4 w-4 fill-current"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Mobile menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
+        <BurgerButton handleClick={burgerHandler} isVisible={isVisible} />
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
             <ScrollLink

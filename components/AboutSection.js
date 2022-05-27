@@ -1,17 +1,29 @@
-import React from 'react';
+import React, {forwardRef, useContext, useEffect, useRef} from 'react';
+import {useIntersectionObserver} from '../lib/hooks';
+import NavContext from '../lib/NavContext';
 
 const AboutSection = () => {
+  const ref = useRef (null);
+  const onScreen = useIntersectionObserver (ref, {threshold: 0.5});
+  const {setIsVisible} = useContext (NavContext);
+
+  useEffect (
+    () => {
+      if (onScreen) {
+        setIsVisible (true);
+      } else if (!onScreen) {
+        setIsVisible (false);
+      }
+
+      // return () => {
+      //   second
+      // }
+    },
+    [onScreen]
+  );
+
   return (
-    <section id='about'>
-      <div className="skew skew-top mr-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 10 0 10" />
-        </svg>
-      </div>
+    <section id="about" ref={ref}>
       <div className="skew skew-top ml-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
@@ -21,6 +33,7 @@ const AboutSection = () => {
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
       </div>
+      {/* {onScreen && <h2>Testing observer hook. If you see this, it works.</h2>} */}
       <div className="py-20 bg-gray-50 radius-for-skewed min-h-[100vh]">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center -mx-4">

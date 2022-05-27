@@ -1,27 +1,41 @@
 import React from 'react';
 import projects from '../data/projects';
 
-const Item = ({imageSrc}) => {
+const Item = ({data: {imageSrc, name, desc}}) => {
   return (
     <div className="relative mb-4 w-full md:w-1/2 lg:w-1/3 px-4">
-      <div className="relative h-80 mb-5 mx-auto rounded-lg">
+      <div className="relative h-80 mb-5 mx-auto rounded-lg group">
         <img
           className="h-80 w-full relative h-full rounded-lg object-cover"
           src={imageSrc}
           alt=""
         />
         {/**hover component */}
-        <div className="opacity-0 hover:opacity-100 ">
+        <div className="opacity-0 hover:opacity-100 hover:transition-all hover:duration-500 transition-all duration-300 ease-in-out">
 
-          <div className="absolute inset-0 bg-purple-600 opacity-75 rounded-lg" />
+          <div className="absolute inset-0 bg-white opacity-75 rounded-lg" />
           <div className="absolute inset-0 p-6 flex flex-col items-start">
-            <span className="text-purple-400">2021</span>
-            <p className="mb-auto text-xl lg:text-2xl text-white font-bold">
-              Lorem ipsum dolor sit amet consectutar
+            <p className="mb-[1.5rem] text-xl lg:text-2xl text-black font-bold">
+              {name}
             </p>
-            <a className="inline-block py-2 px-4 border-2 border-purple-400 hover:border-white bg-transparent text-gray-50 hover:bg-white hover:text-gray-900 transition duration-200 rounded-l-xl rounded-t-xl font-bold leading-loose">
-              View Project
-            </a>
+            <p className="mb-auto text-xl lg:text-2xl text-black font-bold">
+              {desc}
+            </p>
+            <div className="w-full flex flex-row justify-between">
+
+              <a className="cursor-pointer inline-block py-2 px-4 border-2 border-transparent
+            hover:border-purple-500 bg-transparent text-black hover:bg-white shadow-2xl
+             hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
+            font-bold leading-loose">
+                View Live
+              </a>
+              <a className="cursor-pointer inline-block py-2 px-4 border-2 border-transparent
+            hover:border-purple-500 bg-transparent text-black hover:bg-white shadow-2xl
+             hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
+            font-bold leading-loose">
+                View Github
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -81,11 +95,26 @@ const ProjectsSection = () => {
           </div>
           <div className="flex flex-wrap -mx-4 mb-4">
 
-            <Item imageSrc={mugbucket.imageSrc} />
+            <Item
+              data={mugbucket}
+              imageSrc={mugbucket.imageSrc}
+              desc={mugbucket.desc}
+              name={mugbucket.name}
+            />
 
-            <Item imageSrc={trickify.imageSrc} />
+            <Item
+              data={trickify}
+              imageSrc={trickify.imageSrc}
+              desc={trickify.desc}
+              name={trickify.name}
+            />
 
-            <Item imageSrc={gizmos.imageSrc} />
+            <Item
+              data={gizmos}
+              imageSrc={gizmos.imageSrc}
+              desc={gizmos.desc}
+              name={gizmos.name}
+            />
 
           </div>
 
