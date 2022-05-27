@@ -21,20 +21,24 @@ const Item = ({data: {imageSrc, name, desc}}) => {
             <p className="mb-auto text-xl lg:text-2xl text-black font-bold">
               {desc}
             </p>
-            <div className="w-full flex flex-row justify-between">
+            <div className="w-full flex flex-row justify-between relative">
 
-              <a className="cursor-pointer inline-block py-2 px-4 border-2 border-transparent
-            hover:border-purple-500 bg-transparent text-black hover:bg-white shadow-2xl
-             hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
-            font-bold leading-loose">
-                View Live
-              </a>
-              <a className="cursor-pointer inline-block py-2 px-4 border-2 border-transparent
-            hover:border-purple-500 bg-transparent text-black hover:bg-white shadow-2xl
-             hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
-            font-bold leading-loose">
-                View Github
-              </a>
+              <div>
+                <a className="cursor-pointer inline-block py-2 px-4 border-2
+            border-transparent bg-transparent text-black hover:bg-white shadow-2xl
+            hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
+            font-bold leading-loose hover:-translate-y-1">
+                  View Live
+                </a>
+              </div>
+              <div>
+                <a className="cursor-pointer inline-block py-2 px-4 border-2 border-transparent
+            bg-transparent text-black hover:bg-white shadow-2xl
+            hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
+            font-bold leading-loose hover:-translate-y-1">
+                  View Github
+                </a>
+              </div>
             </div>
           </div>
         </div>

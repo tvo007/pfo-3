@@ -13,7 +13,7 @@ const BurgerButton = ({handleClick, isVisible}) => {
           onClick={handleClick}
         >
           <svg
-            className="block h-4 w-4 fill-current"
+            className="block h-5 w-5 fill-current"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
