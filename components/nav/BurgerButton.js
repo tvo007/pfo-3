@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BurgerButton = ({handleClick, isVisible}) => {
+const BurgerButton = ({handleClick}) => {
   return (
     <div className={'p-5 lg:p-3'}>
       {/**visible for mobile */}

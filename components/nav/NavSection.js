@@ -16,12 +16,15 @@ const NavSection = () => {
   const burgerHandler = () => {
     setIsOpen (true);
   };
+
   return (
     <section className="overflow-hidden">
       <nav className="relative px-6 py-6 flex justify-between items-center bg-white">
         <a className="text-3xl font-bold leading-none" />
-        <BurgerButton handleClick={burgerHandler} isVisible={isVisible} />
-        <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <div className={isVisible ? 'lg:invisible' : 'visible'}>
+          <BurgerButton handleClick={burgerHandler} />
+        </div>
+        <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
             <ScrollLink
               to={'home'}
@@ -31,7 +34,6 @@ const NavSection = () => {
               duration={1200}
               className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer"
             >
-
               Home
             </ScrollLink>
           </li>

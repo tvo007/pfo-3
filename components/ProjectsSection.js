@@ -1,12 +1,12 @@
 import React from 'react';
 import projects from '../data/projects';
 
-const Item = ({data: {imageSrc, name, desc}}) => {
+const Item = ({data: {imageSrc, name, desc, url, github, tech}}) => {
   return (
     <div className="relative mb-4 w-full md:w-1/2 lg:w-1/3 px-4">
       <div className="relative h-80 mb-5 mx-auto rounded-lg group">
         <img
-          className="h-80 w-full relative h-full rounded-lg object-cover"
+          className="w-full relative h-full rounded-lg object-cover"
           src={imageSrc}
           alt=""
         />
@@ -24,18 +24,24 @@ const Item = ({data: {imageSrc, name, desc}}) => {
             <div className="w-full flex flex-row justify-between relative">
 
               <div>
-                <a className="cursor-pointer inline-block py-2 px-4 border-2
+                <a
+                  className="cursor-pointer inline-block py-2 px-4 border-2
             border-transparent bg-transparent text-black hover:bg-white shadow-2xl
             hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
-            font-bold leading-loose hover:-translate-y-1">
+            font-bold leading-loose hover:-translate-y-1"
+                  href={url}
+                >
                   View Live
                 </a>
               </div>
               <div>
-                <a className="cursor-pointer inline-block py-2 px-4 border-2 border-transparent
+                <a
+                  className="cursor-pointer inline-block py-2 px-4 border-2 border-transparent
             bg-transparent text-black hover:bg-white shadow-2xl
             hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
-            font-bold leading-loose hover:-translate-y-1">
+            font-bold leading-loose hover:-translate-y-1"
+                  href={github}
+                >
                   View Github
                 </a>
               </div>
@@ -99,26 +105,11 @@ const ProjectsSection = () => {
           </div>
           <div className="flex flex-wrap -mx-4 mb-4">
 
-            <Item
-              data={mugbucket}
-              imageSrc={mugbucket.imageSrc}
-              desc={mugbucket.desc}
-              name={mugbucket.name}
-            />
+            <Item data={mugbucket} />
 
-            <Item
-              data={trickify}
-              imageSrc={trickify.imageSrc}
-              desc={trickify.desc}
-              name={trickify.name}
-            />
+            <Item data={trickify} />
 
-            <Item
-              data={gizmos}
-              imageSrc={gizmos.imageSrc}
-              desc={gizmos.desc}
-              name={gizmos.name}
-            />
+            <Item data={gizmos} />
 
           </div>
 

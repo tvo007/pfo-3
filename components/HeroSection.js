@@ -1,9 +1,29 @@
-import React from 'react';
+import React, {useContext, useEffect, useRef} from 'react';
 import {Link as ScrollLink} from 'react-scroll';
+import {useIntersectionObserver} from '../lib/hooks';
+import NavContext from '../lib/NavContext';
 
 const HeroSection = () => {
+  const ref = useRef (null);
+  const onScreen = useIntersectionObserver (ref, {threshold: 0.4});
+  const {setIsVisible} = useContext (NavContext);
+
+  useEffect (
+    () => {
+      if (onScreen) {
+        setIsVisible (true);
+      } else if (!onScreen) {
+        setIsVisible (false);
+      }
+
+      // return () => {
+      //   second
+      // }
+    },
+    [onScreen]
+  );
   return (
-    <section id="home" className="skewed-top-left">
+    <section id="home" className="skewed-top-left" ref={ref}>
       <div className="skew skew-top ml-for-radius ">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"

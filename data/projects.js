@@ -2,7 +2,7 @@ const projects = {
   trickify: {
     name: 'Trickify',
     desc: 'Catalogue tricks and comboes in tricking samplers.',
-    url: 'https://trickify.vercell.app',
+    url: 'https://trickify.vercel.app',
     github: 'https://github.com/tvo007/trickify',
     imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1651624141/screencapture-localhost-3000-test-2022-05-03-17_26_27_kzfuoy.png',
     tech: '',

@@ -1,29 +1,11 @@
-import React, {forwardRef, useContext, useEffect, useRef} from 'react';
-import {useIntersectionObserver} from '../lib/hooks';
-import NavContext from '../lib/NavContext';
+import React from 'react';
+
 
 const AboutSection = () => {
-  const ref = useRef (null);
-  const onScreen = useIntersectionObserver (ref, {threshold: 0.5});
-  const {setIsVisible} = useContext (NavContext);
-
-  useEffect (
-    () => {
-      if (onScreen) {
-        setIsVisible (true);
-      } else if (!onScreen) {
-        setIsVisible (false);
-      }
-
-      // return () => {
-      //   second
-      // }
-    },
-    [onScreen]
-  );
+  
 
   return (
-    <section id="about" ref={ref}>
+    <section id="about">
       <div className="skew skew-top ml-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
