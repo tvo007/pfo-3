@@ -4,7 +4,7 @@ import {useIntersectionObserver} from '../lib/hooks';
 import NavContext from '../lib/NavContext';
 
 const HeroSection = () => {
-  const ref = useRef (null);
+  const ref = useRef ();
   const onScreen = useIntersectionObserver (ref, {threshold: 0.4});
   const {setIsVisible} = useContext (NavContext);
 

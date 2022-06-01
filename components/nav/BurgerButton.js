@@ -9,11 +9,11 @@ const BurgerButton = ({handleClick}) => {
         */}
       {
         <button
-          className="navbar-burger flex items-center text-gray-400 fixed lg:ml-[-2rem]"
+          className="navbar-burger flex items-center text-gray-400 fixed ml-[-2.5rem] lg:ml-[-5rem] mt-[-2rem] lg:mt-[-2.5rem]"
           onClick={handleClick}
         >
           <svg
-            className="block h-5 w-5 fill-current"
+            className="block h-5 w-5 lg:h-6 lg:w-6 fill-current"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >

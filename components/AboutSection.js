@@ -1,11 +1,11 @@
+
 import React from 'react';
 
-
 const AboutSection = () => {
-  
-
+  //testing framer motion stuff
   return (
     <section id="about">
+      {/* <FloatingNav /> */}
       <div className="skew skew-top ml-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"

@@ -1,29 +1,16 @@
-import Image from 'next/image';
-import React, {useContext, useState} from 'react';
-import facebook from '../../assets/social/facebook-purple.svg';
-import instagram from '../../assets/social/instagram-purple.svg';
-import twitter from '../../assets/social/twitter-purple.svg';
+
+import React from 'react';
 import {Link as ScrollLink} from 'react-scroll';
-import NavContext from '../../lib/NavContext';
-import BurgerButton from './BurgerButton';
+
 
 //todo: programmatically account for chaning viewports on the nav button
 
 const NavSection = () => {
-  const [isOpen, setIsOpen] = useState (false);
-  const {isVisible} = useContext (NavContext);
-
-  const burgerHandler = () => {
-    setIsOpen (true);
-  };
-
+ 
   return (
     <section className="overflow-hidden">
       <nav className="relative px-6 py-6 flex justify-between items-center bg-white">
         <a className="text-3xl font-bold leading-none" />
-        <div className={isVisible ? 'lg:invisible' : 'visible'}>
-          <BurgerButton handleClick={burgerHandler} />
-        </div>
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
             <ScrollLink
@@ -126,7 +113,7 @@ const NavSection = () => {
         </ul>
 
       </nav>
-      <div
+      {/* <div
         className={`${!isOpen && 'hidden'} navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50`}
       >
         <div
@@ -231,7 +218,7 @@ const NavSection = () => {
             </div>
           </div>
         </nav>
-      </div>
+      </div> */}
     </section>
   );
 };
