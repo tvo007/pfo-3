@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import projects from '../data/projects';
 
@@ -12,7 +13,6 @@ const Item = ({data: {imageSrc, name, desc, url, github, tech}}) => {
         />
         {/**hover component */}
         <div className="opacity-0 hover:opacity-100 hover:transition-all hover:duration-500 transition-all duration-300 ease-in-out">
-
           <div className="absolute inset-0 bg-white opacity-75 rounded-lg" />
           <div className="absolute inset-0 p-6 flex flex-col items-start">
             <p className="mb-[1.5rem] text-xl lg:text-2xl text-black font-bold">
@@ -26,7 +26,7 @@ const Item = ({data: {imageSrc, name, desc, url, github, tech}}) => {
               <div>
                 <a
                   className="cursor-pointer inline-block py-2 px-4 border-2
-            border-transparent bg-transparent text-black hover:bg-white shadow-2xl
+                  border-transparent bg-transparent text-black hover:bg-white shadow-2xl
             hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
             font-bold leading-loose hover:-translate-y-1"
                   href={url}
@@ -37,7 +37,7 @@ const Item = ({data: {imageSrc, name, desc, url, github, tech}}) => {
               <div>
                 <a
                   className="cursor-pointer inline-block py-2 px-4 border-2 border-transparent
-            bg-transparent text-black hover:bg-white shadow-2xl
+                  bg-transparent text-black hover:bg-white shadow-2xl
             hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
             font-bold leading-loose hover:-translate-y-1"
                   href={github}

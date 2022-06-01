@@ -29,7 +29,7 @@ const FloatingNav = () => {
       };
 
   return (
-    <div className="sticky">
+    <div className="sticky z-[100]">
       <AnimatePresence>
         <div className={'flex justify-end'}>
           {!isVisible &&
@@ -51,10 +51,13 @@ const FloatingNav = () => {
         </div>
 
       </AnimatePresence>
-      <DrawerNav
-        isDrawerOpen={isDrawerOpen}
-        closeDrawerHandler={closeDrawerHandler}
-      />
+      <div className="sticky">
+
+        <DrawerNav
+          isDrawerOpen={isDrawerOpen}
+          closeDrawerHandler={closeDrawerHandler}
+        />
+      </div>
     </div>
   );
 };
