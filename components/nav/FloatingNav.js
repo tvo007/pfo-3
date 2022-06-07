@@ -40,6 +40,7 @@ const FloatingNav = () => {
               variants={variants}
               animate={'visible'}
               exit={'hidden'}
+              viewport={{ once: false }}
             >
               <BurgerButton handleClick={burgerHandler} />
             </motion.div>}

@@ -1,12 +1,9 @@
-
 import React from 'react';
 import {Link as ScrollLink} from 'react-scroll';
-
 
 //todo: programmatically account for chaning viewports on the nav button
 
 const NavSection = () => {
- 
   return (
     <section className="overflow-hidden">
       <nav className="relative px-6 py-6 flex justify-between items-center bg-white">
@@ -19,7 +16,7 @@ const NavSection = () => {
               smooth={true}
               offset={-100}
               duration={1200}
-              className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer"
+              className="text-sm text-gray-400 hover:text-pink-500 font-bold cursor-pointer"
             >
               Home
             </ScrollLink>
@@ -45,9 +42,9 @@ const NavSection = () => {
               to={'about'}
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={50}
               duration={1200}
-              className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer"
+              className="text-sm text-gray-400 hover:text-pink-500 font-bold cursor-pointer"
             >
 
               About
@@ -74,9 +71,9 @@ const NavSection = () => {
               to={'projects'}
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-50}
               duration={1200}
-              className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer"
+              className="text-sm text-gray-400 hover:text-pink-500 font-bold cursor-pointer"
             >
 
               Projects
@@ -103,9 +100,9 @@ const NavSection = () => {
               to={'contact'}
               spy={true}
               smooth={true}
-              offset={-100}
-              duration={1200}
-              className="text-sm text-gray-400 hover:text-green-600 font-bold cursor-pointer"
+              offset={50}
+              duration={1500}
+              className="text-sm text-gray-400 hover:text-pink-500 font-bold cursor-pointer"
             >
               Contact
             </ScrollLink>
