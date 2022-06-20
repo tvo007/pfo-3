@@ -102,7 +102,7 @@ const AboutSection = () => {
                 <div className="flex flex-col pt-20">
                   <span className="text-2xl">Got an idea?</span>
                   <span className="text-2xl">
-                    Let's make something special.
+                    Let&apos;s make something special.
                   </span>
 
                 </div>
