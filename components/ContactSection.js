@@ -108,7 +108,7 @@ const ContactSection = () => {
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
       </div>
-      <div className="py-20 bg-gray-50 radius-for-skewed min-h-[100vh]">
+      <div className="py-20 bg-gray-50 radius-for-skewed min-h-[60vh]">
         <div className="container mx-auto px-4">
           <div className="mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold font-heading">
