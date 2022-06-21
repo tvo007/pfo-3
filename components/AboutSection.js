@@ -38,68 +38,60 @@ const AboutSection = () => {
                 <h2 className="mb-3 text-4xl lg:text-5xl font-bold font-heading">
                   About Me.
                 </h2>
-                <p className="mb-6 max-w-sm text-gray-400 leading-loose">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.
+                <p className="mb-6 max-w-md text-gray-600 leading-loose">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.ssss ssssssss Pellentesque efficitur nisl sodales egestas lobortis.ssssss
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.ssssssssssssssssss
                 </p>
-                <ul className="text-gray-500 font-bold">
-                  <li className="mb-2 flex items-center">
-                    <svg
-                      className="mr-2 w-5 h-5 text-green-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span>Vestibulum viverra ante non libero</span>
-                  </li>
-                  <li className="mb-2 flex items-center">
-                    <svg
-                      className="mr-2 w-5 h-5 text-green-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span>Morbi mollis metus pretium ultrices tincidunt</span>
-                  </li>
-                  <li className="flex items-center">
-                    <svg
-                      className="mr-2 w-5 h-5 text-green-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span>Etiam lectus nunc, commodo et risus in</span>
-                  </li>
-                </ul>
+                <p className="mb-6 max-w-md text-gray-600 leading-loose">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                
 
-                <div className="flex flex-col justify-start items items-start py-10">
+                {/* <div className="flex flex-col justify-start items items-start py-10">
 
                   <button className="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200 cursor-pointer">
                     My Resume
                   </button>
-                  {/* <button className="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200 cursor-pointer">
-                  Contact Me
-                </button> */}
-                </div>
+                 
+                </div> */}
                 {/**more about me */}
-                <div className="flex flex-col pt-20">
+                <div className="flex-col space-y-5  w-[90vw] lg:w-[30rem]">
+                <div className="">
+                  <span className="text-gray-600 font-heading max-w-sm">
+                    Here are a few technologies I&apos;ve been working with recently:
+                  </span>
+                </div>
+                <div className="flex space-x-3">
+
+                  <TechCard src={htmlIcon} name="HTML" />
+                  <TechCard src={cssIcon} name="CSS" />
+                  <TechCard src={jsIcon} name="Javascript" />
+
+                </div>
+                <div className="flex space-x-3">
+                  <TechCard src={nodeIcon} name={'NodeJs'} />
+                  <TechCard src={reactIcon} name="React" />
+                  <TechCard src={expressIcon} name="Express" />
+
+                </div>
+                <div className="flex space-x-3">
+                  <TechCard src={reduxIcon} name="Redux" />
+                  <TechCard src={nextIcon} name="Next" />
+                  <TechCard src={pgIcon} name="PostgresQL" />
+
+                </div>
+
+              </div>
+
+             
+
+              </div>
+              {/**tech div */}
+
+            </div>
+            <div className="px-4  lg:min-h-[40vh] flex flex-col">
+            <div className="flex flex-col pt-20">
                   <span className="text-2xl">Got an idea?</span>
                   <span className="text-2xl">
                     Let&apos;s make something special.
@@ -107,7 +99,7 @@ const AboutSection = () => {
 
                 </div>
 
-                <div className="flex flex-col justify-start items-end py-8 pr-[7rem]">
+                <div className="flex flex-col justify-start items-end py-8 ">
 
                   <button className="inline-block py-2 px-6 bg-gray-800 hover:bg-black text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200 cursor-pointer">
                     Contact me
@@ -116,16 +108,10 @@ const AboutSection = () => {
   Contact Me
 </button> */}
                 </div>
-
-              </div>
-              {/**tech div */}
-
-            </div>
-            <div className="px-4  lg:min-h-[40vh] flex flex-col">
-              <div className="flex-col space-y-5  w-[90vw] lg:w-[30rem]">
+              {/* <div className="flex-col space-y-5  w-[90vw] lg:w-[30rem]">
                 <div className="">
-                  <span className="text-4xl font-bold font-heading">
-                    Skills.
+                  <span className="text-2xl font-heading">
+                    Here are a few technologies I&apos;ve been working with recently:
                   </span>
                 </div>
                 <div className="flex space-x-5">
@@ -148,7 +134,7 @@ const AboutSection = () => {
 
                 </div>
 
-              </div>
+              </div> */}
 
             </div>
             {/* <div className="w-full lg:w-1/2">

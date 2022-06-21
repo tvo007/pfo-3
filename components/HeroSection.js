@@ -33,7 +33,7 @@ const HeroSection = () => {
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
       </div>
-      <div className="py-20 bg-gray-50 radius-for-skewed h-[100vh]">
+      <div className="py-20 bg-gray-50 radius-for-skewed h-[90vh]">
         <div className="container mx-auto px-4 ">
           <div className="max-w-xl mx-auto text-center">
             <a className="mb-6 inline-block text-3xl font-bold leading-none" />

@@ -12,13 +12,13 @@ const Item = ({data: {imageSrc, name, desc, url, github, tech}}) => {
           alt=""
         />
         {/**hover component */}
-        <div className="opacity-0 hover:opacity-100 hover:transition-all hover:duration-500 transition-all duration-300 ease-in-out">
-          <div className="absolute inset-0 bg-white opacity-75 rounded-lg" />
+        <div className="opacity-0 hover:opacity-80 hover:transition-all hover:duration-500 transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 bg-gray-900 opacity-75 rounded-lg" />
           <div className="absolute inset-0 p-6 flex flex-col items-start">
-            <p className="mb-[1.5rem] text-xl lg:text-2xl text-black font-bold">
+            <p className="mb-[1.5rem] text-xl lg:text-2xl text-white font-bold">
               {name}
             </p>
-            <p className="mb-auto text-xl lg:text-2xl text-black font-bold">
+            <p className="mb-auto  text-white font-bold">
               {desc}
             </p>
             <div className="w-full flex flex-row justify-between relative">
@@ -26,7 +26,7 @@ const Item = ({data: {imageSrc, name, desc, url, github, tech}}) => {
               <div>
                 <a
                   className="cursor-pointer inline-block py-2 px-4 border-2
-                  border-transparent bg-transparent text-black hover:bg-white shadow-2xl
+                  border-transparent bg-purple-600 text-white hover:bg-purple-700 shadow-2xl
             hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
             font-bold leading-loose hover:-translate-y-1"
                   href={url}
@@ -37,7 +37,7 @@ const Item = ({data: {imageSrc, name, desc, url, github, tech}}) => {
               <div>
                 <a
                   className="cursor-pointer inline-block py-2 px-4 border-2 border-transparent
-                  bg-transparent text-black hover:bg-white shadow-2xl
+                  bg-purple-600 text-white hover:bg-purple-700 shadow-2xl
             hover:transition-all transition-all duration-500 ease-in-out rounded-l-xl rounded-t-xl 
             font-bold leading-loose hover:-translate-y-1"
                   href={github}
@@ -90,7 +90,7 @@ const ProjectsSection = () => {
     >
 
       <TopSkew />
-      <div className="py-20 bg-gray-900 radius-for-skewed min-h-[150vh]">
+      <div className="py-20 bg-gray-900 radius-for-skewed min-h-[100vh]">
         <div className="container px-4 mx-auto">
           <div className="mb-16 flex flex-wrap justify-center md:justify-between items-center">
             <div className="text-center lg:text-left">

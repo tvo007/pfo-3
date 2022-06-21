@@ -3,7 +3,7 @@ import React from 'react';
 
 const TechCard = ({src, name}) => {
   return (
-    <div className="inline-flex = w-[10rem] p-3 rounded-xl font-bold text-sm border-0 shadow-lg hover:bg-white duration-300">
+    <div className="inline-flex = w-[9rem] p-3 rounded-xl font-bold text-sm border-0 shadow-lg hover:bg-white duration-300">
       <div>
 
         <Image src={src} height={35} width={35} />
