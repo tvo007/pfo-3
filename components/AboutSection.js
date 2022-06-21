@@ -28,11 +28,11 @@ const AboutSection = () => {
         </svg>
       </div>
       {/* {onScreen && <h2>Testing observer hook. If you see this, it works.</h2>} */}
-      <div className="py-20 bg-gray-50 radius-for-skewed min-h-[100vh]">
+      <div className="py-10 bg-gray-50 radius-for-skewed min-h-[100vh]">
         <div className="container mx-auto px-4">
-          <div className="flex flex-row flex-wrap items-center -mx-4">
+          <div className="flex flex-row flex-wrap -mx-4">
             {/**content */}
-            <div className="mb-12 w-full lg:w-1/2 px-4 ">
+            <div className="mb-12 w-full lg:w-1/2 px-4 pt-[6rem] ">
               <div className="max-w-md">
 
                 <h2 className="mb-3 text-4xl lg:text-5xl font-bold font-heading">
@@ -46,7 +46,6 @@ const AboutSection = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-                
 
                 {/* <div className="flex flex-col justify-start items items-start py-10">
 
@@ -57,57 +56,76 @@ const AboutSection = () => {
                 </div> */}
                 {/**more about me */}
                 <div className="flex-col space-y-5  w-[90vw] lg:w-[30rem]">
-                <div className="">
-                  <span className="text-gray-600 font-heading max-w-sm">
-                    Here are a few technologies I&apos;ve been working with recently:
-                  </span>
+                  <div className="">
+                    <span className="text-gray-600 font-heading max-w-sm">
+                      Here are a few technologies I&apos;ve been working with recently:
+                    </span>
+                  </div>
+                  <div className="flex space-x-3">
+
+                    <TechCard src={htmlIcon} name="HTML" />
+                    <TechCard src={cssIcon} name="CSS" />
+                    <TechCard src={jsIcon} name="Javascript" />
+
+                  </div>
+                  <div className="flex space-x-3">
+                    <TechCard src={nodeIcon} name={'NodeJs'} />
+                    <TechCard src={reactIcon} name="React" />
+                    <TechCard src={expressIcon} name="Express" />
+
+                  </div>
+                  <div className="flex space-x-3">
+                    <TechCard src={reduxIcon} name="Redux" />
+                    <TechCard src={nextIcon} name="Next" />
+                    <TechCard src={pgIcon} name="PostgresQL" />
+
+                  </div>
+
                 </div>
-                <div className="flex space-x-3">
-
-                  <TechCard src={htmlIcon} name="HTML" />
-                  <TechCard src={cssIcon} name="CSS" />
-                  <TechCard src={jsIcon} name="Javascript" />
-
-                </div>
-                <div className="flex space-x-3">
-                  <TechCard src={nodeIcon} name={'NodeJs'} />
-                  <TechCard src={reactIcon} name="React" />
-                  <TechCard src={expressIcon} name="Express" />
-
-                </div>
-                <div className="flex space-x-3">
-                  <TechCard src={reduxIcon} name="Redux" />
-                  <TechCard src={nextIcon} name="Next" />
-                  <TechCard src={pgIcon} name="PostgresQL" />
-
-                </div>
-
-              </div>
-
-             
 
               </div>
               {/**tech div */}
 
             </div>
-            <div className="px-4  lg:min-h-[40vh] flex flex-col">
-            <div className="flex flex-col pt-20">
-                  <span className="text-2xl">Got an idea?</span>
-                  <span className="text-2xl">
-                    Let&apos;s make something special.
-                  </span>
+            {/**image goes here */}
+            <div className="px-4 lg:min-h-[40vh] flex flex-col pl-[2rem]">
+              <div className="relative max-w-lg">
+                <div className="relative bg-gray-700">
+                  <img
+                    className="w-full h-full mb-12 object-cover opacity-50"
+                    src="https://res.cloudinary.com/ddj5orpun/image/upload/v1655787127/kevin-canlas-cFFEeHNZEqw-unsplash_1_tfiriu.jpg"
+                    alt=""
+                  />
+                  <div className="">
+                    <div className=" inset-0  opacity-75 rounded-lg" />
+                    <div className="absolute inset-0 p-6 flex flex-col justify-center items-center pb-[17rem]">
 
+                      <div className="flex flex-col pt-20">
+                        <span className="text-2xl text-white">
+                          Got an idea?
+                        </span>
+                        <span className="text-2xl text-white">
+                          Let&apos;s make something special.
+                        </span>
+
+                      </div>
+
+                      <div className="flex flex-col justify-start items-end py-8">
+
+                        <button className="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200 cursor-pointer">
+                          Contact me
+                        </button>
+                      </div>
+
+                      <div className="w-full flex flex-row justify-between relative" />
+                    </div>
+                  </div>
                 </div>
+              </div>
 
-                <div className="flex flex-col justify-start items-end py-8 ">
-
-                  <button className="inline-block py-2 px-6 bg-gray-800 hover:bg-black text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200 cursor-pointer">
-                    Contact me
-                  </button>
-                  {/* <button className="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200 cursor-pointer">
+              {/* <button className="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200 cursor-pointer">
   Contact Me
 </button> */}
-                </div>
               {/* <div className="flex-col space-y-5  w-[90vw] lg:w-[30rem]">
                 <div className="">
                   <span className="text-2xl font-heading">
