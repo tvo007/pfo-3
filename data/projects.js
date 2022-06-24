@@ -5,7 +5,7 @@ const projects = {
     url: 'https://trickify.vercel.app',
     github: 'https://github.com/tvo007/trickify',
     imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1651624141/screencapture-localhost-3000-test-2022-05-03-17_26_27_kzfuoy.png',
-    tech: '',
+    tech: ['React', 'Next.js', 'Express', 'PostgresQL', 'MUI', 'React Query'],
   },
   mugbucket: {
     name: 'Mug Bucket',
@@ -13,7 +13,16 @@ const projects = {
     url: 'https://thirsty-haibt-8978db.netlify.app/',
     github: 'https://github.com/tvo007/mug-bucket',
     imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1647129209/mug-bucket-camera_nionsj.jpg',
-    tech: '',
+    tech: [
+      'Typescript',
+      'React',
+      'Styled Components',
+      'NestJS',
+      'PostgresQL',
+      'Digital Ocean Spaces',
+      'Heroku',
+      'Netlify',
+    ],
   },
   gizmos: {
     name: 'Gizmos',
@@ -21,7 +30,7 @@ const projects = {
     url: 'https://gizmos-shop.vercel.app/',
     github: 'https://github.com/tvo007/gizmos-shop',
     imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1651626584/screencapture-localhost-3000-test-2022-05-03-18_09_27_ramiib.png',
-    tech: '',
+    tech: ['Next.js', 'React', 'Shopify Storefront', 'TailwindCSS', 'GraphQL'],
   },
 };
 

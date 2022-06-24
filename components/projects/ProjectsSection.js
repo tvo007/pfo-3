@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import projects from '../../data/projects';
+import ProjectShowcase from './ProjectShowcase';
 
 const Item = ({data: {imageSrc, name, desc, url, github, tech}}) => {
   return (
@@ -91,7 +92,7 @@ const ProjectsSection = () => {
 
       <TopSkew />
       <div className="py-20 bg-gray-900 radius-for-skewed min-h-[100vh]">
-        <div className="container px-4 mx-auto max-w-5xl">
+        <div className="container px-4 mx-auto max-w-4xl">
           <div className="mb-16 flex flex-wrap justify-center md:justify-between items-center">
             <div className="text-center lg:text-left">
               <span className="text-purple-600 font-bold">
@@ -101,9 +102,8 @@ const ProjectsSection = () => {
                 My Projects
               </h2>
             </div>
-
           </div>
-          <div className="flex flex-wrap -mx-4 mb-4">
+          {/* <div className="flex flex-wrap -mx-4 mb-4">
 
             <Item data={mugbucket} />
 
@@ -111,8 +111,11 @@ const ProjectsSection = () => {
 
             <Item data={gizmos} />
 
-          </div>
-          {/**new project section in progress */}
+          </div> */}
+          <ProjectShowcase data={mugbucket} />
+          <ProjectShowcase data={trickify} />
+          <ProjectShowcase data={gizmos} />
+
           <div />
 
         </div>
