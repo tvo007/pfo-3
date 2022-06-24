@@ -99,17 +99,8 @@ const ContactSection = () => {
           <polygon fill="currentColor" points="0 0 10 10 0 10" />
         </svg>
       </div>
-      <div className="skew skew-top ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 10 10 0 10 10" />
-        </svg>
-      </div>
       <div className="py-20 bg-gray-50 radius-for-skewed min-h-[60vh]">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 max-w-5xl">
           <div className="mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold font-heading">
               Contact

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import projects from '../data/projects';
+import projects from '../../data/projects';
 
 const Item = ({data: {imageSrc, name, desc, url, github, tech}}) => {
   return (
@@ -91,7 +91,7 @@ const ProjectsSection = () => {
 
       <TopSkew />
       <div className="py-20 bg-gray-900 radius-for-skewed min-h-[100vh]">
-        <div className="container px-4 mx-auto">
+        <div className="container px-4 mx-auto max-w-5xl">
           <div className="mb-16 flex flex-wrap justify-center md:justify-between items-center">
             <div className="text-center lg:text-left">
               <span className="text-purple-600 font-bold">
@@ -112,6 +112,8 @@ const ProjectsSection = () => {
             <Item data={gizmos} />
 
           </div>
+          {/**new project section in progress */}
+          <div />
 
         </div>
       </div>
