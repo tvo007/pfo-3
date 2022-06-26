@@ -83,7 +83,7 @@ const BottomSkew = () => {
 };
 
 const ProjectsSection = () => {
-  const {trickify, mugbucket, gizmos} = projects;
+  const {trickify, mugbucket, gizmos, studio37} = projects;
   return (
     <section
       id="projects"
@@ -112,6 +112,7 @@ const ProjectsSection = () => {
             <Item data={gizmos} />
 
           </div> */}
+          <ProjectShowcase data={studio37} />
           <ProjectShowcase data={mugbucket} />
           <ProjectShowcase data={trickify} />
           <ProjectShowcase data={gizmos} />

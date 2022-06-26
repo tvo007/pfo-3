@@ -12,7 +12,7 @@ const projects = {
     desc: 'Upload, store, and share photos via generated cdn link.',
     url: 'https://thirsty-haibt-8978db.netlify.app/',
     github: 'https://github.com/tvo007/mug-bucket',
-    imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1647129209/mug-bucket-camera_nionsj.jpg',
+    imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1656270455/screencapture-thirsty-haibt-8978db-netlify-app-2022-06-26-12_06_48_p3vzom.png',
     tech: [
       'Typescript',
       'React',
@@ -31,6 +31,14 @@ const projects = {
     github: 'https://github.com/tvo007/gizmos-shop',
     imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1651626584/screencapture-localhost-3000-test-2022-05-03-18_09_27_ramiib.png',
     tech: ['Next.js', 'React', 'Shopify Storefront', 'TailwindCSS', 'GraphQL'],
+  },
+  studio37: {
+    name: 'Studio37',
+    desc: 'Landing for a real life Music Recording Studio.',
+    url: '',
+    github: '',
+    imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1656270048/screencapture-localhost-3000-landing-2022-06-26-11_59_54_ho3hef.png',
+    tech: ['Next.js', 'React', 'TailwindCSS'],
   },
 };
 
