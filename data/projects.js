@@ -35,8 +35,8 @@ const projects = {
   studio37: {
     name: 'Studio37',
     desc: 'Landing for a real life Music Recording Studio.',
-    url: '',
-    github: '',
+    url: 'https://studio37.vercel.app',
+    github: 'https://github.com/tvo007/studio37',
     imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1656270048/screencapture-localhost-3000-landing-2022-06-26-11_59_54_ho3hef.png',
     tech: ['Next.js', 'React', 'TailwindCSS'],
   },
