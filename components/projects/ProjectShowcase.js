@@ -43,7 +43,7 @@ const ProjectShowcase = ({data: {imageSrc, name, desc, url, github, tech}}) => {
                 <p className="max-w-xs mx-auto text-gray-500 leading-loose">
                   {desc}
                 </p>
-                <p className="max-w-xs mx-auto text-green-400 leading-loose">
+                <p className="max-w-xs mx-auto text-green-400 leading-loose h-[4rem]">
                   {tech.map ((item, index) => (
                     <span key={index} className="pr-3">{item} </span>
                   ))}
