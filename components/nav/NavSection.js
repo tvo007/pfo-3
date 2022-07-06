@@ -16,7 +16,7 @@ const NavSection = () => {
               smooth={true}
               offset={-100}
               duration={1200}
-              className="text-sm text-gray-400 hover:text-pink-500 font-bold cursor-pointer"
+              className="text-sm text-gray-400 hover:text-purple-500 font-bold cursor-pointer"
             >
               Home
             </ScrollLink>
@@ -44,7 +44,7 @@ const NavSection = () => {
               smooth={true}
               offset={50}
               duration={1200}
-              className="text-sm text-gray-400 hover:text-pink-500 font-bold cursor-pointer"
+              className="text-sm text-gray-400 hover:text-purple-500 font-bold cursor-pointer"
             >
 
               About
@@ -73,7 +73,7 @@ const NavSection = () => {
               smooth={true}
               offset={-50}
               duration={1200}
-              className="text-sm text-gray-400 hover:text-pink-500 font-bold cursor-pointer"
+              className="text-sm text-gray-400 hover:text-purple-500 font-bold cursor-pointer"
             >
 
               Projects
@@ -102,7 +102,7 @@ const NavSection = () => {
               smooth={true}
               offset={50}
               duration={1500}
-              className="text-sm text-gray-400 hover:text-pink-500 font-bold cursor-pointer"
+              className="text-sm text-gray-400 hover:text-purple-500 font-bold cursor-pointer"
             >
               Contact
             </ScrollLink>

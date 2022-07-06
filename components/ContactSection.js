@@ -198,7 +198,7 @@ const ContactSection = () => {
                   <div className="flex justify-between items-center">
                     <label />
                     <button
-                      className="inline-block py-2 px-6 rounded-l-xl rounded-t-xl bg-pink-600 hover:bg-pink-700 text-gray-50 font-bold leading-loose transition duration-200"
+                      className="inline-block py-2 px-6 rounded-l-xl rounded-t-xl bg-purple-600 hover:bg-purple-700 text-gray-50 font-bold leading-loose transition duration-200"
                       disabled={status.submitting}
                     >
                       {!status.submitting
