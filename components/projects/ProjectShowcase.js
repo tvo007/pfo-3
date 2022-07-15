@@ -32,7 +32,7 @@ const ProjectShowcase = ({data: {imageSrc, name, desc, url, github, tech}}) => {
                 alt=""
               />
               <div className="xl:hidden mt-12 text-center" />
-              <div className="xl:absolute top-0 left-0 mt-12 xl:mt-20 max-w-xl mx-auto xl:mx-0 p-6 xl:py-10 rounded bg-gray-800 border-gray-50 shadow-md ">
+              <div className="xl:absolute top-0 left-0 mt-12 xl:mt-32 max-w-xl mx-auto xl:mx-0 p-6 xl:py-10 rounded bg-gray-800 border-gray-50 shadow-md ">
 
                 <span className="font-bold text-purple-600">
                   Featured Project

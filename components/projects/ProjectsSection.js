@@ -112,9 +112,9 @@ const ProjectsSection = () => {
             <Item data={gizmos} />
 
           </div> */}
-          <ProjectShowcase data={studio37} />
-          <ProjectShowcase data={mugbucket} />
           <ProjectShowcase data={trickify} />
+          <ProjectShowcase data={mugbucket} />
+          <ProjectShowcase data={studio37} />
           <ProjectShowcase data={gizmos} />
 
           <div />

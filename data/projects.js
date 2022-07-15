@@ -1,10 +1,10 @@
 const projects = {
   trickify: {
     name: 'Trickify',
-    desc: 'Catalogue tricks and comboes in tricking samplers.',
+    desc: 'Catalogues tricks and comboes in tricking samplers.',
     url: 'https://trickify.vercel.app',
     github: 'https://github.com/tvo007/trickify',
-    imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1651624141/screencapture-localhost-3000-test-2022-05-03-17_26_27_kzfuoy.png',
+    imageSrc: 'https://res.cloudinary.com/ddj5orpun/image/upload/v1657848011/screencapture-trickify-vercel-app-search-2022-07-14-18_19_08_xlrph9.png',
     tech: ['React', 'Next.js', 'Express', 'PostgresQL', 'MUI', 'React Query'],
   },
   mugbucket: {
