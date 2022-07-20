@@ -33,18 +33,18 @@ const HeroSection = () => {
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
       </div>
-      <div className="py-20 bg-gray-50 radius-for-skewed h-[90vh]">
+      <div className="py-36 bg-gray-50 radius-for-skewed h-[90vh]">
         <div className="container mx-auto px-4 ">
-          <div className="max-w-xl mx-auto text-center">
+          <div className="max-w-2xl mx-auto text-center">
             <a className="mb-6 inline-block text-3xl font-bold leading-none" />
             <h2 className="mb-1 text-4xl lg:text-5xl font-bold font-heading">
-              Hello, I am Tim Vo,
+              Hello, I&apos;m Tim Vo,
             </h2>
             <h2 className="mb-4 text-4xl lg:text-5xl font-bold font-heading">
               Full Stack Web Developer.
             </h2>
             <p className="max-w-md mx-auto mb-6 text-gray-500 leading-loose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.
+              I enjoy using React with some backend magic to solve problems and bring ideas to life!
             </p>
             <ScrollLink
               to={'about'}

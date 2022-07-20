@@ -1,17 +1,5 @@
 // import Image from 'next/image';
 import React from 'react';
-
-// import reactIcon from '../assets/images/react-original.svg';
-// import cssIcon from '../assets/images/css3-plain.svg';
-// import expressIcon from '../assets/images/express-original.svg';
-// import htmlIcon from '../assets/images/html5-plain.svg';
-// import jsIcon from '../assets/images/javascript-original.svg';
-// import reduxIcon from '../assets/images/redux-original.svg';
-// import pgIcon from '../assets/images/postgresql-plain.svg';
-// import nodeIcon from '../assets/images/nodejs-original.svg';
-// import nestIcon from '../assets/images/nestjs-plain.svg';
-// import nextIcon from '../assets/images/nextjs-original.svg';
-// import TechCard from './about/TechCard';
 import ListColumn from './ListColumn';
 
 const AboutSection = () => {
@@ -28,19 +16,29 @@ const AboutSection = () => {
         </svg>
       </div>
       {/* {onScreen && <h2>Testing observer hook. If you see this, it works.</h2>} */}
-      <div className=" bg-gray-50 radius-for-skewed min-h-[100vh]">
+      <div className=" bg-gray-50 radius-for-skewed min-h-[100vh] pb-2">
         <div className="container mx-auto w-[90%] lg:max-w-4xl">
           <div className="flex flex-col flex-wrap ">
             {/**content */}
-            <div className="mb-12 w-full px-4 pt-[6rem] ">
+            <div className="mb-12 w-full px-4 pt-[8rem] ">
 
               <h2 className="mb-3 text-4xl lg:text-5xl font-bold font-heading">
                 About Me.
               </h2>
               <p className="mb-6 max-w-2xl text-gray-600 leading-loose">
-                Lorem ipsum dolor sit amet consectetur dddddddd adipisicing elit. Omnis officia inventore eaque explicabo, eligendi impedit reprehenderit harum nulla at minus cumque officiis! Saepe ea incidunt quae commodi consequatur ipsa quidem!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eveniet provident omnis facilis officia, molestiae cum id saepe maxime inventore placeat numquam. Quasi voluptate, omnis nulla optio molestias possimus necessitatibus.
+                My journey into coding started when a friend asked for my help creating a fun little boba shop search app.
+                Not one to shy away from a challenge and already having some basic knowledge of coding, we spent a few days figuring out how to just make it work.
+                When we finally got the app to work, I realized how much I enjoyed the process of not just coding but,
+                {' '}
+                the process of bringing an idea to life through collaboration and creativity.
+                {' '}
               </p>
+              {/* <p className="mb-6 max-w-2xl text-gray-600 leading-loose">
+                Nowdays, I like to spend my free time exploring upcoming front end technologies,
+                {' '}
+                figuring out how to make a new guitar lick work in a song, and doing martial arts flips at a nearby park. 
+                {' '}
+              </p> */}
 
               {/* <div className="flex flex-col justify-start items items-start py-10">
 

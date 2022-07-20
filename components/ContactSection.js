@@ -3,7 +3,6 @@ import {useEffect, useState} from 'react';
 import axios from 'axios';
 import facebook from '../assets/social/facebook-purple.svg';
 import instagram from '../assets/social/instagram-purple.svg';
-import twitter from '../assets/social/twitter-purple.svg';
 
 const ContactSection = () => {
   const [status, setStatus] = useState ({
@@ -103,7 +102,7 @@ const ContactSection = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold font-heading">
-              Contact
+              Contact.
             </h2>
             <p className="text-gray-500 leading-loose">
               Got any question? Let’s talk about it.
@@ -133,9 +132,7 @@ const ContactSection = () => {
                     <a className="mr-3">
                       <Image src={facebook} alt="" />
                     </a>
-                    <a className="mr-3">
-                      <Image src={twitter} alt="" />
-                    </a>
+
                     <a>
                       <Image src={instagram} alt="" />
                     </a>

@@ -95,11 +95,9 @@ const ProjectsSection = () => {
         <div className="container px-4 mx-auto max-w-4xl">
           <div className="mb-16 flex flex-wrap justify-center md:justify-between items-center">
             <div className="text-center lg:text-left">
-              <span className="text-purple-600 font-bold">
-                Dolor sit amet consectutar
-              </span>
+
               <h2 className="text-4xl lg:text-5xl font-bold font-heading text-white">
-                My Projects
+                Projects.
               </h2>
             </div>
           </div>

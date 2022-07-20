@@ -2,11 +2,10 @@ import Image from 'next/image';
 import React from 'react';
 import facebook from '../assets/social/facebook-purple.svg';
 import instagram from '../assets/social/instagram-purple.svg';
-import twitter from '../assets/social/twitter-purple.svg';
 
 const FooterSection = () => {
   return (
-    <section id='footer'>
+    <section id="footer">
       <div className="skew skew-top mr-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
@@ -35,9 +34,7 @@ const FooterSection = () => {
             <a>
               <Image src={facebook} alt="" />
             </a>
-            <a>
-              <Image src={twitter} alt="" />
-            </a>
+
             <a>
               <Image src={instagram} alt="" />
             </a>
