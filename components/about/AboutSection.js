@@ -1,11 +1,13 @@
 // import Image from 'next/image';
-import React from 'react';
-import ListColumn from './ListColumn';
+import React from "react";
+import ImageOverlay from "../ImageOverlay";
+import TopSkew from "../TopSkew";
+import ListColumn from "./ListColumn";
 
 const AboutSection = () => {
   //testing framer motion stuff
   return (
-    <section id="about">
+    <section id="about" className="relative z-10">
       <div className="skew skew-top ml-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
@@ -15,23 +17,30 @@ const AboutSection = () => {
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
       </div>
+
       {/* {onScreen && <h2>Testing observer hook. If you see this, it works.</h2>} */}
+      {/* <ImageOverlay /> */}
+
       <div className=" bg-gray-50 radius-for-skewed min-h-[100vh] pb-2">
         <div className="container mx-auto w-[90%] lg:max-w-4xl">
           <div className="flex flex-col flex-wrap ">
             {/**content */}
             <div className="mb-12 w-full px-4 pt-[8rem] ">
-
               <h2 className="mb-3 text-4xl lg:text-5xl font-bold font-heading">
                 About Me.
               </h2>
               <p className="mb-6 max-w-2xl text-gray-600 leading-loose">
-                My journey into coding started when a friend asked for my help creating a fun little boba shop search app.
-                Not one to shy away from a challenge and already having some basic knowledge of coding, we spent a few days figuring out how to just make it work.
-                When we finally got the app to work, I realized how much I enjoyed the process of not just coding but,
-                {' '}
-                the process of bringing an idea to life through collaboration and creativity.
-                {' '}
+                My journey into coding started when a friend asked for my help
+                creating a fun little boba shop search app. Not one to shy away
+                from a challenge, we spent a week figuring out how to just make
+                it work...
+              </p>
+              <p className="mb-6 max-w-2xl text-gray-600 leading-loose">
+                After going through countless google searches, youtube videos,
+                and boba tea cups, we finally did get it to work! It was then I
+                realized how much I enjoyed the process of not just coding but,
+                the process of bringing an idea to life through collaboration
+                and creativity.{" "}
               </p>
               {/* <p className="mb-6 max-w-2xl text-gray-600 leading-loose">
                 Nowdays, I like to spend my free time exploring upcoming front end technologies,
@@ -48,43 +57,42 @@ const AboutSection = () => {
                  
                 </div> */}
               {/**more about me */}
+
               <div className="flex-col space-y-5  lg:w-[30rem]">
                 <div className="">
                   <span className="text-gray-600 font-heading max-w-sm">
-                    Here are a few technologies I&apos;ve been working with recently:
+                    Here are a few technologies I&apos;ve been working with
+                    recently:
                   </span>
                 </div>
 
                 <div className="flex flex-row justify-start items-start space-x-8">
-
                   <div className="flex">
-
                     <ListColumn
-                      name1={'React'}
-                      name2={'Redux'}
-                      name3={'Typescript'}
-                    />
-                  </div>
-                  <div className="flex">
-
-                    <ListColumn
-                      name1={'Next.js'}
-                      name2={'Express'}
-                      name3={'Jest'}
+                      name1={"React"}
+                      name2={"Redux"}
+                      name3={"Typescript"}
                     />
                   </div>
                   <div className="flex">
                     <ListColumn
-                      name1={'Git/Github'}
-                      name2={'PostgresQL'}
-                      name3={'Cypress'}
+                      name1={"Next.js"}
+                      name2={"Express"}
+                      name3={"Jest"}
+                    />
+                  </div>
+                  <div className="flex">
+                    <ListColumn
+                      name1={"Git/Github"}
+                      name2={"PostgresQL"}
+                      name3={"Cypress"}
                     />
                   </div>
                 </div>
               </div>
+              {/* <ImageOverlay /> */}
 
               {/**tech div */}
-
             </div>
             {/**image goes here */}
             {/* <div className="px-4 lg:min-h-[40vh] flex flex-col pl-[2rem]"> */}
@@ -165,11 +173,8 @@ const AboutSection = () => {
               </div>
             </div> */}
             {/**tech buttons */}
-
           </div>
-
         </div>
-
       </div>
 
       <div className="skew skew-bottom ml-for-radius">

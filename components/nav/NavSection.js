@@ -1,17 +1,17 @@
-import React from 'react';
-import {Link as ScrollLink} from 'react-scroll';
+import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 //todo: programmatically account for chaning viewports on the nav button
 
 const NavSection = () => {
   return (
-    <section className="overflow-hidden">
-      <nav className="relative px-6 py-6 flex justify-between items-center bg-white">
+    <section className="overflow-hidden relative z-50">
+      <nav className="relative px-6 py-6 flex justify-between items-center bg-white z-50">
         <a className="text-3xl font-bold leading-none" />
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
             <ScrollLink
-              to={'home'}
+              to={"home"}
               spy={true}
               smooth={true}
               offset={-100}
@@ -39,14 +39,13 @@ const NavSection = () => {
           </li>
           <li>
             <ScrollLink
-              to={'about'}
+              to={"about"}
               spy={true}
               smooth={true}
               offset={50}
               duration={1200}
               className="text-sm text-gray-400 hover:text-purple-500 font-bold cursor-pointer"
             >
-
               About
             </ScrollLink>
           </li>
@@ -68,14 +67,13 @@ const NavSection = () => {
           </li>
           <li>
             <ScrollLink
-              to={'projects'}
+              to={"projects"}
               spy={true}
               smooth={true}
               offset={-50}
               duration={1200}
               className="text-sm text-gray-400 hover:text-purple-500 font-bold cursor-pointer"
             >
-
               Projects
             </ScrollLink>
           </li>
@@ -97,7 +95,7 @@ const NavSection = () => {
           </li>
           <li>
             <ScrollLink
-              to={'contact'}
+              to={"contact"}
               spy={true}
               smooth={true}
               offset={50}
@@ -108,7 +106,6 @@ const NavSection = () => {
             </ScrollLink>
           </li>
         </ul>
-
       </nav>
       {/* <div
         className={`${!isOpen && 'hidden'} navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50`}
