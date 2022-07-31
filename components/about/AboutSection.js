@@ -52,7 +52,7 @@ const AboutSection = () => {
               </p>
 
               <p className="mb-6 max-w-2xl text-gray-600 leading-loose">
-                Please don't hesitate to{" "}
+                Please don&apos;t hesitate to{" "}
                 <span className="group transition-all duration-300 ease-in-out text-md cursor-pointer  text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-700">
                   <ScrollLink
                     to={"contact"}

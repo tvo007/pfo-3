@@ -3,8 +3,6 @@ import { Link as ScrollLink } from "react-scroll";
 import { useIntersectionObserver } from "../lib/hooks";
 import NavContext from "../lib/NavContext";
 import ImageOverlay from "./ImageOverlay";
-import test from "../assets/elements/puzzle.svg";
-import Image from "next/image";
 
 const HeroSection = () => {
   const ref = useRef();
