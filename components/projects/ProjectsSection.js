@@ -13,7 +13,7 @@ const ProjectsSection = () => {
       className="skewed-top-left skewed-bottom-right bg-gray-50 "
     >
       <TopSkew />
-      <div className="py-20 bg-gray-900 radius-for-skewed min-h-[100vh] relative z-50">
+      <div className="py-20 bg-gray-900 radius-for-skewed min-h-[50vh] relative z-50">
         <div className="container px-4 mx-auto max-w-4xl ">
           <div className="mb-16 flex flex-wrap justify-center md:justify-between items-center">
             <div className="text-center lg:text-left">

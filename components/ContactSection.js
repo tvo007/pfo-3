@@ -1,91 +1,88 @@
-import Image from 'next/image';
-import {useEffect, useState} from 'react';
-import axios from 'axios';
-import facebook from '../assets/social/facebook-purple.svg';
-import instagram from '../assets/social/instagram-purple.svg';
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import facebook from "../assets/social/facebook-purple.svg";
+import instagram from "../assets/social/instagram-purple.svg";
 
 const ContactSection = () => {
-  const [status, setStatus] = useState ({
+  const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
-    info: {error: false, msg: null},
+    info: { error: false, msg: null },
   });
 
-  const [inputs, setInputs] = useState ({
-    email: '',
-    message: '',
+  const [inputs, setInputs] = useState({
+    email: "",
+    message: "",
   });
 
   const handleServerResponse = (ok, msg) => {
     if (ok) {
-      setStatus ({
+      setStatus({
         submitted: true,
         submitting: false,
-        info: {error: false, msg: msg},
+        info: { error: false, msg: msg },
       });
-      setInputs ({
-        email: '',
-        name: '',
-        subject: '',
-        message: '',
+      setInputs({
+        email: "",
+        name: "",
+        subject: "",
+        message: "",
       });
     } else {
-      setStatus ({
-        info: {error: true, msg: msg},
+      setStatus({
+        info: { error: true, msg: msg },
       });
     }
   };
 
-  const handleOnChange = e => {
-    e.persist ();
-    setInputs (prev => ({
+  const handleOnChange = (e) => {
+    e.persist();
+    setInputs((prev) => ({
       ...prev,
       [e.target.id]: e.target.value,
     }));
-    setStatus ({
+    setStatus({
       submitted: false,
       submitting: false,
-      info: {error: false, msg: null},
+      info: { error: false, msg: null },
     });
   };
 
-  const handleOnSubmit = e => {
-    e.preventDefault ();
-    setStatus (prevStatus => ({...prevStatus, submitting: true}));
-    axios ({
-      method: 'POST',
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
+    axios({
+      method: "POST",
       url: process.env.NEXT_PUBLIC_FORMSPREE_URL,
       data: inputs,
     })
-      .then (response => {
-        handleServerResponse (
+      .then((response) => {
+        handleServerResponse(
           true,
-          'Thank you, your message has been submitted.'
+          "Thank you, your message has been submitted."
         );
       })
-      .catch (error => {
-        handleServerResponse (false, error.response.data.error);
+      .catch((error) => {
+        handleServerResponse(false, error.response.data.error);
       });
   };
 
-  useEffect (
-    () => {
-      if (status.submitted === true) {
-        let timer = setTimeout (
-          () =>
-            setStatus ({
-              submitted: false,
-              submitting: false,
-              info: {error: false, msg: null},
-            }),
-          5 * 1000
-        );
+  useEffect(() => {
+    if (status.submitted === true) {
+      let timer = setTimeout(
+        () =>
+          setStatus({
+            submitted: false,
+            submitting: false,
+            info: { error: false, msg: null },
+          }),
+        5 * 1000
+      );
 
-        return () => clearTimeout (timer);
-      }
-    },
-    [status.submitted]
-  );
+      return () => clearTimeout(timer);
+    }
+  }, [status.submitted]);
 
   return (
     <section id="contact">
@@ -105,7 +102,7 @@ const ContactSection = () => {
               Contact.
             </h2>
             <p className="text-gray-500 leading-loose">
-              Got any question? Let’s talk about it.
+              Got any questions? Let’s talk about it.
             </p>
           </div>
           <div className="flex flex-wrap">
@@ -122,7 +119,6 @@ const ContactSection = () => {
                     Contacts
                   </h3>
                   <p className="text-gray-400">timtvo714@gmail.com</p>
-
                 </div>
                 <div className="w-full md:w-1/3 lg:w-full">
                   <h3 className="mb-2 text-3xl lg:text-4xl font-bold">
@@ -150,7 +146,7 @@ const ContactSection = () => {
                       placeholder="Subject"
                       id="subject"
                       onChange={handleOnChange}
-                      value={inputs.subject || ''}
+                      value={inputs.subject || ""}
                       name="subject"
                       required
                     />
@@ -162,7 +158,7 @@ const ContactSection = () => {
                       placeholder="Name"
                       id="name"
                       onChange={handleOnChange}
-                      value={inputs.name || ''}
+                      value={inputs.name || ""}
                       name="name"
                       required
                     />
@@ -174,7 +170,7 @@ const ContactSection = () => {
                       placeholder="name@example.com"
                       id="email"
                       onChange={handleOnChange}
-                      value={inputs.email || ''}
+                      value={inputs.email || ""}
                       name="_replyto"
                       required
                     />
@@ -187,7 +183,7 @@ const ContactSection = () => {
                       name="message"
                       onChange={handleOnChange}
                       required
-                      value={inputs.message || ''}
+                      value={inputs.message || ""}
                       id="message"
                     />
                   </div>
@@ -199,8 +195,10 @@ const ContactSection = () => {
                       disabled={status.submitting}
                     >
                       {!status.submitting
-                        ? !status.submitted ? 'Get Started' : 'Submitted'
-                        : 'Submitting...'}
+                        ? !status.submitted
+                          ? "Get Started"
+                          : "Submitted"
+                        : "Submitting..."}
                     </button>
                   </div>
                 </form>

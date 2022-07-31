@@ -3,11 +3,12 @@ import React from "react";
 import ImageOverlay from "../ImageOverlay";
 import TopSkew from "../TopSkew";
 import ListColumn from "./ListColumn";
+import { Link as ScrollLink } from "react-scroll";
 
 const AboutSection = () => {
   //testing framer motion stuff
   return (
-    <section id="about" className="relative z-10">
+    <section className="relative z-10" id="about">
       <div className="skew skew-top ml-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
@@ -21,7 +22,7 @@ const AboutSection = () => {
       {/* {onScreen && <h2>Testing observer hook. If you see this, it works.</h2>} */}
       {/* <ImageOverlay /> */}
 
-      <div className=" bg-gray-50 radius-for-skewed min-h-[100vh] pb-2">
+      <div className=" bg-gray-50 radius-for-skewed min-h-[50vh] pb-2">
         <div className="container mx-auto w-[90%] lg:max-w-4xl">
           <div className="flex flex-col flex-wrap ">
             {/**content */}
@@ -42,6 +43,43 @@ const AboutSection = () => {
                 the process of bringing an idea to life through collaboration
                 and creativity.{" "}
               </p>
+
+              <p className="max-w-xs text-gray-600 leading-loose">
+                Interested in working together?
+              </p>
+              <p className="max-w-md text-gray-600 leading-loose mb-6 sm:mb-0">
+                I am always open to discuss future collaborations!
+              </p>
+
+              <p className="mb-6 max-w-2xl text-gray-600 leading-loose">
+                Please don't hesitate to{" "}
+                <span className="group transition-all duration-300 ease-in-out text-md cursor-pointer  text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-purple-700">
+                  <ScrollLink
+                    to={"contact"}
+                    spy={true}
+                    smooth={true}
+                    duration={1200}
+                    className=" bg-left-bottom bg-gradient-to-r from-purple-500 to-purple-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+                  >
+                    contact me!
+                  </ScrollLink>
+                </span>
+              </p>
+
+              {/* <div className="pb-8">
+                <ScrollLink
+                  to={"contact"}
+                  spy={true}
+                  smooth={true}
+                  duration={1200}
+                  className=" "
+                >
+                  <span className="bg-left-bottom bg-gradient-to-r from-purple-500 to-purple-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    Contact
+                  </span>
+                </ScrollLink>
+              </div> */}
+
               {/* <p className="mb-6 max-w-2xl text-gray-600 leading-loose">
                 Nowdays, I like to spend my free time exploring upcoming front end technologies,
                 {' '}
@@ -61,8 +99,7 @@ const AboutSection = () => {
               <div className="flex-col space-y-5  lg:w-[30rem]">
                 <div className="">
                   <span className="text-gray-600 font-heading max-w-sm">
-                    Here are a few technologies I&apos;ve been working with
-                    recently:
+                    Development Skills:
                   </span>
                 </div>
 

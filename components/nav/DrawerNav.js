@@ -1,10 +1,12 @@
-import React from 'react';
-import {Link as ScrollLink} from 'react-scroll';
+import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
-const DrawerNav = ({isDrawerOpen, closeDrawerHandler}) => {
+const DrawerNav = ({ isDrawerOpen, closeDrawerHandler }) => {
   return (
     <div
-      className={`${!isDrawerOpen && 'hidden'} navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-[100]`}
+      className={`${
+        !isDrawerOpen && "hidden"
+      } navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-[100]`}
     >
       <div
         className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
@@ -34,7 +36,7 @@ const DrawerNav = ({isDrawerOpen, closeDrawerHandler}) => {
           <ul>
             <li className="mb-1 cursor-pointer">
               <ScrollLink
-                to={'home'}
+                to={"home"}
                 spy={true}
                 smooth={true}
                 offset={-100}
@@ -47,24 +49,23 @@ const DrawerNav = ({isDrawerOpen, closeDrawerHandler}) => {
             <li className="mb-1 cursor-pointer">
               <ScrollLink
                 activeClass="active"
-                to={'about'}
+                to={"about"}
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={100}
                 duration={1200}
                 className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
               >
                 About
-
               </ScrollLink>
             </li>
             <li className="mb-1 cursor-pointer">
               <ScrollLink
                 activeClass="active"
-                to={'projects'}
+                to={"projects"}
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={0}
                 duration={1200}
                 className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
               >
@@ -74,17 +75,16 @@ const DrawerNav = ({isDrawerOpen, closeDrawerHandler}) => {
             <li className="mb-1 cursor-pointer">
               <ScrollLink
                 activeClass="active"
-                to={'contact'}
+                to={"contact"}
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-50}
                 duration={1200}
                 className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
               >
                 Contact
               </ScrollLink>
             </li>
-
           </ul>
         </div>
         {/* <div className="mt-auto">

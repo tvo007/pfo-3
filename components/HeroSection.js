@@ -3,6 +3,8 @@ import { Link as ScrollLink } from "react-scroll";
 import { useIntersectionObserver } from "../lib/hooks";
 import NavContext from "../lib/NavContext";
 import ImageOverlay from "./ImageOverlay";
+import test from "../assets/elements/puzzle.svg";
+import Image from "next/image";
 
 const HeroSection = () => {
   const ref = useRef();
@@ -21,9 +23,9 @@ const HeroSection = () => {
     // }
   }, [onScreen]);
   return (
-    <>
-      <section id="home" className="skewed-top-left relative z-20" ref={ref}>
-        <div className="skew skew-top ml-for-radius -z-50">
+    <section id="home" ref={ref}>
+      <div className="skewed-top-left ">
+        <div className="skew skew-top ml-for-radius">
           <svg
             className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
             viewBox="0 0 10 10"
@@ -32,8 +34,8 @@ const HeroSection = () => {
             <polygon fill="currentColor" points="0 10 10 0 10 10" />
           </svg>
         </div>
-        <div className="pt-16 2xl:pt-36 bg-gray-50 radius-for-skewed h-[90vh] relative z-50 ">
-          {/* <ImageOverlay /> */}
+        <div className="pt-16 2xl:pt-36 bg-gray-50 radius-for-skewed h-[90vh]">
+          <ImageOverlay />
           <div className="container mx-auto px-4 h-[70vh] relative ">
             <div className="max-w-2xl mx-auto text-center h-full -z-50">
               <a className="mb-6 inline-block text-3xl font-bold leading-none" />
@@ -82,9 +84,11 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
 export default HeroSection;
+
+//https://bennettfeely.com/clippy/

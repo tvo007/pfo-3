@@ -42,7 +42,7 @@ const NavSection = () => {
               to={"about"}
               spy={true}
               smooth={true}
-              offset={50}
+              offset={100}
               duration={1200}
               className="text-sm text-gray-400 hover:text-purple-500 font-bold cursor-pointer"
             >
