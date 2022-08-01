@@ -32,7 +32,7 @@ const HeroSection = () => {
             <polygon fill="currentColor" points="0 10 10 0 10 10" />
           </svg>
         </div>
-        <div className="pt-16 2xl:pt-36 bg-gray-50 radius-for-skewed h-[90vh]">
+        <div className="pt-16 2xl:pt-36 bg-gray-50 radius-for-skewed h-[90vh] relative overflow-hidden">
           <ImageOverlay />
           <div className="container mx-auto px-4 h-[70vh] relative ">
             <div className="max-w-2xl mx-auto text-center h-full -z-50">
