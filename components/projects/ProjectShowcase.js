@@ -1,6 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const ProjectShowcase = ({data: {imageSrc, name, desc, url, github, tech}}) => {
+const ProjectShowcase = ({
+  data: { imageSrc, name, desc, url, github, tech },
+}) => {
   return (
     <div>
       {/* <div className="skew skew-top mr-for-radius">
@@ -21,19 +23,22 @@ const ProjectShowcase = ({data: {imageSrc, name, desc, url, github, tech}}) => {
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
       </div> */}
-      <div className="py-20 bg-gray-900 radius-for-skewed">
-        <div className="container mx-auto px-4  ">
+      <div className="py-16 xl:mb-32 bg-gray-900 radius-for-skewed">
+        <div className="container mx-auto ">
           <div className="relative flex">
             <div className="hidden xl:absolute inset-y-0 left-0 -ml-6 xl:flex items-center" />
             <div className="w-full xl:w-4/5 xl:ml-auto">
               <img
-                className="md:max-w-xl xl:max-w-4xl mx-auto relative object-cover rounded"
+                className="sm:max-w-xl  xl:max-w-2xl mx-auto relative object-cover rounded"
                 src={imageSrc}
                 alt=""
               />
               <div className="xl:hidden mt-12 text-center" />
-              <div className="xl:absolute top-0 left-0 mt-12 xl:mt-32 max-w-xl mx-auto xl:mx-0 p-6 xl:py-10 rounded bg-gray-800 border-gray-50 shadow-md ">
-
+              <div
+                className="xl:absolute top-0 left-0 mt-24 xl:mt-28 max-w-xl 
+              mx-auto xl:ml-36 p-6 xl:py-8 
+              rounded bg-gray-800 border-gray-50 shadow-md "
+              >
                 <span className="font-bold text-purple-600">
                   Featured Project
                 </span>
@@ -44,14 +49,15 @@ const ProjectShowcase = ({data: {imageSrc, name, desc, url, github, tech}}) => {
                   {desc}
                 </p>
                 <p className="max-w-xs mx-auto text-green-400 leading-loose h-[4rem]">
-                  {tech.map ((item, index) => (
-                    <span key={index} className="pr-3">{item} </span>
+                  {tech.map((item, index) => (
+                    <span key={index} className="pr-3">
+                      {item}{" "}
+                    </span>
                   ))}
                 </p>
-                <div className="mt-10 pt-10">
+                <div className="mt-8 pt-8">
                   <div className="flex flex-row space-x-4 justify-end">
-                    <a href={url || '/'}>
-
+                    <a href={url || "/"}>
                       <p className="text-white leading-loose">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +76,7 @@ const ProjectShowcase = ({data: {imageSrc, name, desc, url, github, tech}}) => {
                       </p>
                     </a>
 
-                    <a href={github || '/'}>
+                    <a href={github || "/"}>
                       <p className=" text-black leading-loose">
                         <svg
                           className="h-6 w-6 invert"
@@ -92,9 +98,7 @@ const ProjectShowcase = ({data: {imageSrc, name, desc, url, github, tech}}) => {
                     </a>
                   </div>
                 </div>
-
               </div>
-
             </div>
 
             <div className="hidden xl:absolute inset-y-0 right-0 -mr-8 xl:flex items-center" />

@@ -22,8 +22,8 @@ const AboutSection = () => {
       {/* {onScreen && <h2>Testing observer hook. If you see this, it works.</h2>} */}
       {/* <ImageOverlay /> */}
 
-      <div className=" bg-gray-50 radius-for-skewed min-h-[50vh] pb-2">
-        <div className="container mx-auto w-[90%] lg:max-w-4xl">
+      <div className=" bg-gray-50 radius-for-skewed min-h-[50vh] pb-2 ">
+        <div className="container mx-auto max-w-full lg:max-w-4xl px-8 lg:px-0 ">
           <div className="flex flex-col flex-wrap ">
             {/**content */}
             <div className="mb-12 w-full px-4 pt-[8rem] ">
@@ -47,7 +47,7 @@ const AboutSection = () => {
               <p className="max-w-xs text-gray-600 leading-loose">
                 Interested in working together?
               </p>
-              <p className="max-w-md text-gray-600 leading-loose mb-6 sm:mb-0">
+              <p className="max-w-md text-gray-600 leading-loose sm:mb-0">
                 I am always open to discuss future collaborations!
               </p>
 

@@ -65,7 +65,7 @@ const DrawerNav = ({ isDrawerOpen, closeDrawerHandler }) => {
                 to={"projects"}
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={75}
                 duration={1200}
                 className="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
               >

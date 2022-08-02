@@ -14,9 +14,9 @@ const ProjectsSection = () => {
     >
       <TopSkew />
       <div className="py-20 bg-gray-900 radius-for-skewed min-h-[50vh] relative z-50">
-        <div className="container px-4 mx-auto max-w-4xl ">
-          <div className="mb-16 flex flex-wrap justify-center md:justify-between items-center">
-            <div className="text-center lg:text-left">
+        <div className="container mx-auto">
+          <div className=" flex flex-wrap justify-center xl:justify-between items-center">
+            <div className="text-center lg:text-left xl:pl-36">
               <span className="font-bold text-purple-600 text-lg">
                 Here are some of my featured
               </span>

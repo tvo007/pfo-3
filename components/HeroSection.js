@@ -32,7 +32,7 @@ const HeroSection = () => {
             <polygon fill="currentColor" points="0 10 10 0 10 10" />
           </svg>
         </div>
-        <div className="pt-16 2xl:pt-36 bg-gray-50 radius-for-skewed h-[90vh] relative overflow-hidden">
+        <div className="pt-16 2xl:pt-36 bg-gray-50 radius-for-skewed h-[95vh] relative overflow-hidden">
           <ImageOverlay />
           <div className="container mx-auto px-4 h-[70vh] relative ">
             <div className="max-w-2xl mx-auto text-center h-full -z-50">
@@ -52,6 +52,7 @@ const HeroSection = () => {
                 spy={true}
                 smooth={true}
                 duration={1200}
+                offset={0}
                 className="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200 cursor-pointer"
               >
                 View My Works
@@ -63,6 +64,7 @@ const HeroSection = () => {
                   spy={true}
                   smooth={true}
                   duration={1200}
+                  offset={100}
                 >
                   <div className="animate-bounce bg-white p-2 w-10 h-10 shadow-lg rounded-full flex items-center cursor-pointer ">
                     <svg
