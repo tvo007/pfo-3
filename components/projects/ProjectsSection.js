@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       <div className="py-20 bg-gray-900 radius-for-skewed min-h-[50vh] relative z-50">
         <div className="container mx-auto max-w-6xl">
           <div className=" flex flex-wrap justify-center xl:justify-between items-center">
-            <div className="text-center lg:text-left xl:pl-36">
+            <div className="text-center xl:text-left xl:pl-36">
               <span className="font-bold text-purple-600 text-lg">
                 Here are some of my featured
               </span>
