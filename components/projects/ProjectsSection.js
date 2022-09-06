@@ -36,8 +36,8 @@ const ProjectsSection = () => {
           </div> */}
           <ProjectShowcase data={trickify} />
           <ProjectShowcase data={mugbucket} />
-          <ProjectShowcase data={studio37} />
           <ProjectShowcase data={gizmos} />
+          {/* <ProjectShowcase data={studio37} /> */}
 
           <div />
         </div>

@@ -2,7 +2,7 @@ const projects = {
   trickify: {
     name: "Trickify",
     desc: "Catalogues tricks and comboes in tricking samplers.",
-    url: "https://trickify.vercel.app",
+    url: "https://trickify.app",
     github: "https://github.com/tvo007/trickify",
     imageSrc:
       "https://res.cloudinary.com/ddj5orpun/image/upload/v1657848011/screencapture-trickify-vercel-app-search-2022-07-14-18_19_08_xlrph9.png",
@@ -11,7 +11,7 @@ const projects = {
   mugbucket: {
     name: "Mug Bucket",
     desc: "Upload, store, and share photos via generated cdn link.",
-    url: "https://thirsty-haibt-8978db.netlify.app/",
+    url: "https://mugbucket.com",
     github: "https://github.com/tvo007/mug-bucket",
     imageSrc:
       "https://res.cloudinary.com/ddj5orpun/image/upload/v1656270455/screencapture-thirsty-haibt-8978db-netlify-app-2022-06-26-12_06_48_p3vzom.png",
