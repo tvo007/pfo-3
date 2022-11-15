@@ -6,7 +6,7 @@ import TopSkew from "../TopSkew";
 import BottomSkew from "../BottomSkew";
 
 const ProjectsSection = () => {
-  const { trickify, mugbucket, gizmos, studio37 } = projects;
+  const { trickify, mugbucket, gizmos, studio37, ilira } = projects;
   return (
     <section
       id="projects"
@@ -35,6 +35,7 @@ const ProjectsSection = () => {
 
           </div> */}
           <ProjectShowcase data={trickify} />
+          <ProjectShowcase data={ilira} />
           <ProjectShowcase data={mugbucket} />
           <ProjectShowcase data={gizmos} />
           {/* <ProjectShowcase data={studio37} /> */}

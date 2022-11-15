@@ -1,12 +1,32 @@
 const projects = {
   trickify: {
     name: "Trickify",
-    desc: "Catalogues tricks and comboes in tricking samplers.",
+    desc: "Catalogues tricks and comboes in tricking samplers. Displays movements/tricks as you watch the sampler. Can search and sort tricks in samplers.",
     url: "https://trickify.app",
     github: "https://github.com/tvo007/trickify",
     imageSrc:
       "https://res.cloudinary.com/ddj5orpun/image/upload/v1657848011/screencapture-trickify-vercel-app-search-2022-07-14-18_19_08_xlrph9.png",
     tech: ["React", "Next.js", "Express", "PostgresQL", "MUI", "React Query"],
+  },
+
+  ilira: {
+    name: "Ilira",
+    desc: "Kanban Board with persistent Google SSO sessions, built in database transactions, and state mangement with Redux. Board orientation persists in the database.",
+    url: "https://dynamic-squirrel-c77fde.netlify.app",
+    github: "Private",
+    imageSrc:
+      "https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+    //placeholder
+    tech: [
+      "React",
+      "Vite",
+      "Express",
+      "PostgresQL",
+      "MikroORM",
+      "Tailwind",
+      "Redux Toolkit",
+      "RTK-Query",
+    ],
   },
   mugbucket: {
     name: "Mug Bucket",
