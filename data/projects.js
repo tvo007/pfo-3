@@ -12,10 +12,10 @@ const projects = {
   ilira: {
     name: "Ilira",
     desc: "Kanban Board with persistent Google SSO sessions, built in database transactions, and state mangement with Redux. Board orientation persists in the database.",
-    url: "https://dynamic-squirrel-c77fde.netlify.app",
+    url: "https://ilira.app",
     github: "Private",
     imageSrc:
-      "https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+      "https://res.cloudinary.com/ddj5orpun/image/upload/v1669504577/screencapture-ilira-app-projects-1ac3c684-47a5-40b6-a4b7-a287d2577d0e-2022-11-26-15_14_36_v2mfao.png",
     //placeholder
     tech: [
       "React",
