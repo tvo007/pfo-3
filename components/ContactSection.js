@@ -101,7 +101,7 @@ const ContactSection = () => {
               <h2 className="text-xl lg:text-2xl font-bold font-heading">
                 CONTACT
               </h2>
-              <div class="mx-8 h-0.5 w-full max-w-md rounded bg-gray-200"></div>
+              <div className="mx-8 h-0.5 w-full max-w-md rounded bg-gray-200"></div>
             </div>
             <p className="text-gray-500 leading-loose">
               Got any questions? Let’s talk about it.

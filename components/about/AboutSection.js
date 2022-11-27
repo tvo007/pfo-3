@@ -31,7 +31,7 @@ const AboutSection = () => {
                 <h2 className="text-xl lg:text-2xl font-bold font-heading ">
                   ABOUT
                 </h2>
-                <div class="mx-8 h-0.5 w-full max-w-md rounded bg-gray-200"></div>
+                <div className="mx-8 h-0.5 w-full max-w-md rounded bg-gray-200"></div>
               </div>
               <p className="mb-6 max-w-2xl text-gray-600 leading-loose">
                 My journey into coding started when a friend asked for my help

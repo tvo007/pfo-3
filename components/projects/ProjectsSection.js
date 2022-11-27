@@ -16,7 +16,7 @@ const ProjectsSection = () => {
             <h2 className="text-xl  font-bold font-heading text-white">
               PROJECTS
             </h2>
-            <div class="mx-8 h-0.5 w-full max-w-md rounded bg-gray-100"></div>
+            <div className="mx-8 h-0.5 w-full max-w-md rounded bg-gray-100"></div>
           </div>
           <ProjectShowcase data={trickify} isReversed />
           <ProjectShowcase data={ilira} />
