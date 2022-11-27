@@ -1,85 +1,44 @@
 import React from "react";
 import MobileProjectDetails from "./MobileProjectDetails";
-import ProjectDetails from "./ProjectDetails";
-import { useIsExtraLarge } from "../../lib/hooks";
+import ProjectLinks from "./ProjectLinks";
 
 const ProjectShowcase = ({
   data: { imageSrc, name, desc, url, github, tech },
+  isReversed,
 }) => {
-  const isExtraLarge = useIsExtraLarge();
-
+  const revStyle = isReversed ? "md:flex-row-reverse" : "md:flex-row";
   return (
-    <div>
-      {/* <div className="skew skew-top mr-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 10 0 10" />
-        </svg>
-      </div>
-      <div className="skew skew-top ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 10 10 0 10 10" />
-        </svg>
-      </div> */}
-      <div className="py-16 xl:mb-32 bg-gray-900 radius-for-skewed">
-        <div className="container mx-auto ">
+    <div className="pb-16">
+      <div className="bg-gray-900">
+        <div className=" mx-4 ">
           <div className="relative flex">
-            <div className="hidden xl:absolute inset-y-0 left-0 -ml-6 xl:flex items-center" />
-            <div className="w-full xl:w-4/5 xl:ml-auto">
+            {/* <div className="hidden xl:absolute inset-y-0 left-0 -ml-6 xl:flex items-center" /> */}
+            <div
+              className={`w-full flex flex-col 
+              ${revStyle}
+              }`}
+            >
+              {/* <div className="xl:hidden mt-12 text-center" /> */}
+              <MobileProjectDetails
+                name={name}
+                desc={desc}
+                url={url}
+                github={github}
+                tech={tech}
+                isReversed={isReversed}
+              />
               <img
-                className="sm:max-w-xl  xl:max-w-2xl mx-auto relative object-cover rounded"
+                className="max-w-md mx-auto relative object-cover pb-4"
                 src={imageSrc}
                 alt=""
               />
-              <div className="xl:hidden mt-12 text-center" />
-              {isExtraLarge ? (
-                <ProjectDetails
-                  name={name}
-                  desc={desc}
-                  url={url}
-                  github={github}
-                  tech={tech}
-                />
-              ) : (
-                <MobileProjectDetails
-                  name={name}
-                  desc={desc}
-                  url={url}
-                  github={github}
-                  tech={tech}
-                />
-              )}
             </div>
-
-            <div className="hidden xl:absolute inset-y-0 right-0 -mr-8 xl:flex items-center" />
           </div>
         </div>
       </div>
-      {/* <div className="skew skew-bottom mr-for-radius">
-        <svg
-        className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 0 0 10" />
-        </svg>
+      <div className="md:hidden">
+        <ProjectLinks url={url} github={github} />
       </div>
-      <div className="skew skew-bottom ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 0 10 10" />
-        </svg>
-      </div> */}
     </div>
   );
 };

@@ -7,7 +7,6 @@ const ProjectDetails = ({ name, desc, tech, url, github }) => {
   mx-auto xl:ml-36 p-6 xl:py-8 
   rounded bg-gray-800 border-gray-50 shadow-md "
     >
-      <span className="font-bold text-purple-600">Featured Project</span>
       <h2 className="text-4xl font-bold font-heading text-white">{name}</h2>
       <p className="max-w-xs mx-auto text-gray-500 leading-loose">{desc}</p>
       <p className="max-w-xs mx-auto text-green-400 leading-loose h-[4rem]">

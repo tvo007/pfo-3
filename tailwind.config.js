@@ -3,6 +3,8 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: ["md:flex-row-reverse", "md:flex-row"],
+
   theme: {
     screens: {
       xs: "320px",

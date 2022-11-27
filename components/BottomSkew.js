@@ -1,6 +1,6 @@
 const BottomSkew = () => {
   return (
-    <div className="skew skew-bottom mr-for-radius">
+    <div className="">
       <svg
         className="h-8 md:h-12 lg:h-20 w-full text-gray-900"
         viewBox="0 0 10 10"

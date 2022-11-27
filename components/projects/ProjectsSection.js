@@ -8,35 +8,19 @@ import BottomSkew from "../BottomSkew";
 const ProjectsSection = () => {
   const { trickify, mugbucket, gizmos, studio37, ilira } = projects;
   return (
-    <section
-      id="projects"
-      className="skewed-top-left skewed-bottom-right bg-gray-50 "
-    >
+    <section id="projects" className=" bg-gray-50">
       <TopSkew />
-      <div className="py-20 bg-gray-900 radius-for-skewed min-h-[50vh] relative z-50">
-        <div className="container mx-auto max-w-6xl">
-          <div className=" flex flex-wrap justify-center xl:justify-between items-center">
-            <div className="text-center xl:text-left xl:pl-36">
-              <span className="font-bold text-purple-600 text-lg">
-                Here are some of my featured
-              </span>
-              <h2 className="text-4xl lg:text-5xl font-bold font-heading text-white">
-                Projects.
-              </h2>
-            </div>
+      <div className="py-20 bg-gray-900  min-h-[50vh] relative z-50">
+        <div className="container mx-auto max-w-3xl">
+          <div className="flex flex-row justify-start items-center px-4 pb-16">
+            <h2 className="text-xl  font-bold font-heading text-white">
+              PROJECTS
+            </h2>
+            <div class="mx-8 h-0.5 w-full max-w-md rounded bg-gray-100"></div>
           </div>
-          {/* <div className="flex flex-wrap -mx-4 mb-4">
-
-            <Item data={mugbucket} />
-
-            <Item data={trickify} />
-
-            <Item data={gizmos} />
-
-          </div> */}
-          <ProjectShowcase data={trickify} />
+          <ProjectShowcase data={trickify} isReversed />
           <ProjectShowcase data={ilira} />
-          <ProjectShowcase data={mugbucket} />
+          <ProjectShowcase data={mugbucket} isReversed />
           <ProjectShowcase data={gizmos} />
           {/* <ProjectShowcase data={studio37} /> */}
 

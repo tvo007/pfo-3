@@ -23,13 +23,16 @@ const AboutSection = () => {
       {/* <ImageOverlay /> */}
 
       <div className=" bg-gray-50 radius-for-skewed min-h-[50vh] pb-2 ">
-        <div className="container mx-auto max-w-full lg:max-w-4xl px-8 lg:px-0 ">
+        <div className=" mx-auto max-w-full lg:max-w-3xl px-8 lg:px-0 ">
           <div className="flex flex-col flex-wrap ">
             {/**content */}
-            <div className="mb-12 w-full px-4 pt-[8rem] ">
-              <h2 className="mb-3 text-4xl lg:text-5xl font-bold font-heading">
-                About Me.
-              </h2>
+            <div className="mb-12 w-full pt-[8rem]">
+              <div className="flex flex-row items-center mb-3 justify-start">
+                <h2 className="text-xl lg:text-2xl font-bold font-heading ">
+                  ABOUT
+                </h2>
+                <div class="mx-8 h-0.5 w-full max-w-md rounded bg-gray-200"></div>
+              </div>
               <p className="mb-6 max-w-2xl text-gray-600 leading-loose">
                 My journey into coding started when a friend asked for my help
                 creating a fun little boba shop search app. Not one to shy away
@@ -214,7 +217,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className="skew skew-bottom ml-for-radius">
+      {/* <div className="skew skew-bottom ml-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
@@ -222,7 +225,7 @@ const AboutSection = () => {
         >
           <polygon fill="currentColor" points="0 0 10 0 10 10" />
         </svg>
-      </div>
+      </div> */}
     </section>
   );
 };

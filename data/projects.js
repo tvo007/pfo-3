@@ -6,7 +6,7 @@ const projects = {
     github: "https://github.com/tvo007/trickify",
     imageSrc:
       "https://res.cloudinary.com/ddj5orpun/image/upload/v1657848011/screencapture-trickify-vercel-app-search-2022-07-14-18_19_08_xlrph9.png",
-    tech: ["React", "Next.js", "Express", "PostgresQL", "MUI", "React Query"],
+    tech: ["Next.js", "MUI", "React Query"],
   },
 
   ilira: {
@@ -17,16 +17,7 @@ const projects = {
     imageSrc:
       "https://res.cloudinary.com/ddj5orpun/image/upload/v1669504577/screencapture-ilira-app-projects-1ac3c684-47a5-40b6-a4b7-a287d2577d0e-2022-11-26-15_14_36_v2mfao.png",
     //placeholder
-    tech: [
-      "React",
-      "Vite",
-      "Express",
-      "PostgresQL",
-      "MikroORM",
-      "Tailwind",
-      "Redux Toolkit",
-      "RTK-Query",
-    ],
+    tech: ["React", "Express", "Tailwind", "Redux"],
   },
   mugbucket: {
     name: "Mug Bucket",
@@ -35,16 +26,7 @@ const projects = {
     github: "https://github.com/tvo007/mug-bucket",
     imageSrc:
       "https://res.cloudinary.com/ddj5orpun/image/upload/v1656270455/screencapture-thirsty-haibt-8978db-netlify-app-2022-06-26-12_06_48_p3vzom.png",
-    tech: [
-      "Typescript",
-      "React",
-      "Styled Components",
-      "NestJS",
-      "PostgresQL",
-      "Digital Ocean Spaces",
-      "Heroku",
-      "Netlify",
-    ],
+    tech: ["Typescript", "React", "NestJS", "PostgresQL"],
   },
   gizmos: {
     name: "Gizmos",
@@ -53,7 +35,7 @@ const projects = {
     github: "https://github.com/tvo007/gizmos-shop",
     imageSrc:
       "https://res.cloudinary.com/ddj5orpun/image/upload/v1651626584/screencapture-localhost-3000-test-2022-05-03-18_09_27_ramiib.png",
-    tech: ["Next.js", "React", "Shopify Storefront", "TailwindCSS", "GraphQL"],
+    tech: ["Next.js", "Shopify", "Tailwind", "GraphQL"],
   },
   studio37: {
     name: "Studio37",
