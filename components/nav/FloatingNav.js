@@ -1,59 +1,58 @@
-import React, {useContext} from 'react';
-import NavContext from '../../lib/NavContext';
-import BurgerButton from './BurgerButton';
-import DrawerNav from './DrawerNav';
-import {motion, AnimatePresence} from 'framer-motion';
-import {useIsMedium} from '../../lib/hooks';
+import React, { useContext } from "react";
+import NavContext from "../../lib/NavContext";
+import BurgerButton from "./BurgerButton";
+import DrawerNav from "./DrawerNav";
+import { motion, AnimatePresence } from "framer-motion";
+import { useIsMedium } from "../../lib/hooks";
 const FloatingNav = () => {
-  const {isVisible, isDrawerOpen, setIsDrawerOpen} = useContext (NavContext);
+  const { isVisible, isDrawerOpen, setIsDrawerOpen } = useContext(NavContext);
 
-  const isMedium = useIsMedium ();
+  const isMedium = useIsMedium();
 
   const burgerHandler = () => {
-    setIsDrawerOpen (true);
+    setIsDrawerOpen(true);
   };
 
   //refactor to navcontext
   const closeDrawerHandler = () => {
-    setIsDrawerOpen (false);
+    setIsDrawerOpen(false);
   };
 
   const variants = isMedium
     ? {
-        visible: {opacity: 1, visibility: 'visible'},
-        hidden: {opacity: 0, visibility: 'hidden'},
+        visible: { opacity: 1, visibility: "visible" },
+        hidden: { opacity: 0, visibility: "hidden" },
       }
     : {
-        visible: {opacity: 1, visibility: 'visible'},
-        hidden: {opacity: 1, visibility: 'visible'},
+        visible: { opacity: 1, visibility: "visible" },
+        hidden: { opacity: 1, visibility: "visible" },
       };
 
   return (
     <div className="sticky z-[100]">
       <AnimatePresence>
-        <div className={'flex justify-end'}>
-          {!isVisible &&
-            isMedium &&
+        <div className={"flex justify-end"}>
+          {!isVisible && isMedium && (
             <motion.div
               key="burger"
-              initial={'hidden'}
+              initial={"hidden"}
               variants={variants}
-              animate={'visible'}
-              exit={'hidden'}
+              animate={"visible"}
+              exit={"hidden"}
               viewport={{ once: false }}
             >
               <BurgerButton handleClick={burgerHandler} />
-            </motion.div>}
+            </motion.div>
+          )}
 
-          {!isMedium &&
-            <motion.div initial={{opacity: 0}} animate={{opacity: 1}}>
+          {!isMedium && (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
               <BurgerButton handleClick={burgerHandler} />
-            </motion.div>}
+            </motion.div>
+          )}
         </div>
-
       </AnimatePresence>
       <div className="sticky">
-
         <DrawerNav
           isDrawerOpen={isDrawerOpen}
           closeDrawerHandler={closeDrawerHandler}

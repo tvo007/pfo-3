@@ -6,7 +6,7 @@ const DrawerNav = ({ isDrawerOpen, closeDrawerHandler }) => {
     <div
       className={`${
         !isDrawerOpen && "hidden"
-      } navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-[100]`}
+      } navbar-menu fixed top-0 right-0 bottom-0 w-5/6 max-w-sm z-[100]`}
     >
       <div
         className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"

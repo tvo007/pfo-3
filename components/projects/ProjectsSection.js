@@ -12,16 +12,18 @@ const ProjectsSection = () => {
       <TopSkew />
       <div className="py-20 bg-gray-900  min-h-[50vh] relative z-50">
         <div className="container mx-auto max-w-3xl">
-          <div className="flex flex-row justify-start items-center px-4 pb-16">
-            <h2 className="text-xl  font-bold font-heading text-white">
+          <div className="flex flex-row justify-start items-center pb-16 px-8">
+            <h2 className="text-xl md:text-2xl  font-bold font-heading text-white">
               PROJECTS
             </h2>
             <div className="mx-8 h-0.5 w-full max-w-md rounded bg-gray-100"></div>
           </div>
-          <ProjectShowcase data={trickify} isReversed />
-          <ProjectShowcase data={ilira} />
-          <ProjectShowcase data={mugbucket} isReversed />
-          <ProjectShowcase data={gizmos} />
+          <div className="px-4">
+            <ProjectShowcase data={trickify} isReversed />
+            <ProjectShowcase data={ilira} />
+            <ProjectShowcase data={mugbucket} isReversed />
+            <ProjectShowcase data={gizmos} />
+          </div>
           {/* <ProjectShowcase data={studio37} /> */}
 
           <div />

@@ -28,16 +28,16 @@ const ProjectShowcase = ({
                 isReversed={isReversed}
               />
               <img
-                className="max-w-md mx-auto relative object-cover pb-4"
+                className="md:max-w-md mx-auto relative object-cover pb-4"
                 src={imageSrc}
                 alt=""
               />
+              <div className="md:hidden">
+                <ProjectLinks url={url} github={github} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="md:hidden">
-        <ProjectLinks url={url} github={github} />
       </div>
     </div>
   );

@@ -95,7 +95,7 @@ const ContactSection = () => {
         </svg>
       </div>
       <div className="py-20 bg-gray-50 radius-for-skewed min-h-[60vh]">
-        <div className="container mx-auto px-4 max-w-3xl">
+        <div className="container mx-auto px-4 max-w-3xl px-8">
           <div className="mb-8">
             <div className="flex flex-row items-center">
               <h2 className="text-xl lg:text-2xl font-bold font-heading">

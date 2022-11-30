@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const BurgerButton = ({handleClick}) => {
+const BurgerButton = ({ handleClick }) => {
   return (
-    <div className={'p-5 lg:p-3'}>
+    <div className={"p-5 lg:p-3"}>
       {/**visible for mobile */}
       {/* 
         show if mobile  VV

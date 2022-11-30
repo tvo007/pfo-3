@@ -23,7 +23,7 @@ const AboutSection = () => {
       {/* <ImageOverlay /> */}
 
       <div className=" bg-gray-50 radius-for-skewed min-h-[50vh] pb-2 ">
-        <div className=" mx-auto max-w-full lg:max-w-3xl px-8 lg:px-0 ">
+        <div className=" mx-auto max-w-full lg:max-w-2xl px-8 lg:px-0 ">
           <div className="flex flex-col flex-wrap ">
             {/**content */}
             <div className="mb-12 w-full pt-[8rem]">
