@@ -34,7 +34,7 @@ const projects = {
     url: "https://gizmos-shop.vercel.app/",
     github: "https://github.com/tvo007/gizmos-shop",
     imageSrc:
-      "https://res.cloudinary.com/ddj5orpun/image/upload/v1651626584/screencapture-localhost-3000-test-2022-05-03-18_09_27_ramiib.png",
+      "https://res.cloudinary.com/ddj5orpun/image/upload/v1670124668/gizmosImg2_gte2l7.jpg",
     tech: ["Next.js", "Shopify", "Tailwind", "GraphQL"],
   },
   studio37: {
