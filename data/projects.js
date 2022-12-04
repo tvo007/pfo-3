@@ -15,7 +15,7 @@ const projects = {
     url: "https://ilira.app",
     github: "Private",
     imageSrc:
-      "https://res.cloudinary.com/ddj5orpun/image/upload/v1669504577/screencapture-ilira-app-projects-1ac3c684-47a5-40b6-a4b7-a287d2577d0e-2022-11-26-15_14_36_v2mfao.png",
+      "https://res.cloudinary.com/ddj5orpun/image/upload/v1670117121/screencapture-ilira-app-projects-1ac3c684-47a5-40b6-a4b7-a287d2577d0e-2022-12-03-17_24_50_yewjfj.png",
     //placeholder
     tech: ["React", "Express", "Tailwind", "Redux"],
   },
@@ -25,7 +25,7 @@ const projects = {
     url: "https://mugbucket.com",
     github: "https://github.com/tvo007/mug-bucket",
     imageSrc:
-      "https://res.cloudinary.com/ddj5orpun/image/upload/v1656270455/screencapture-thirsty-haibt-8978db-netlify-app-2022-06-26-12_06_48_p3vzom.png",
+      "https://res.cloudinary.com/ddj5orpun/image/upload/v1670114346/screencapture-localhost-3000-2022-12-03-16_38_49_tr9edb.png",
     tech: ["Typescript", "React", "NestJS", "PostgresQL"],
   },
   gizmos: {
