@@ -1,7 +1,8 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 
-//todo: programmatically account for chaning viewports on the nav button
+//https://tailwindui.com/components/application-ui/overlays/slide-overs
+//heqadless ui transition
 
 const NavSection = () => {
   return (

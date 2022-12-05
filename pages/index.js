@@ -13,9 +13,7 @@ export default function Home() {
       <div className="w-full">
         <NavContent />
         <FloatingNav />
-
         <HeroContent />
-
         {/* <AboutContent />
          */}
         <AboutSection />

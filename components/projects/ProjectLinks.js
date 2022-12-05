@@ -4,7 +4,7 @@ const ProjectLinks = ({ url, github }) => {
   return (
     <div className="flex space-x-4 justify-end">
       <a href={url || "/"}>
-        <p className="text-white leading-loose hover:text-green-400">
+        <p className="text-white leading-loose hover:text-green-400 transition duration-200">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -23,7 +23,7 @@ const ProjectLinks = ({ url, github }) => {
       </a>
 
       <a href={github || "/"}>
-        <p className="text-white leading-loose hover:text-green-400">
+        <p className="text-white leading-loose hover:text-green-400 transition duration-200">
           <svg
             className="h-5 w-5 mt-[3px]"
             xmlns="http://www.w3.org/2000/svg"
