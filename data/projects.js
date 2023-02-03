@@ -13,7 +13,7 @@ const projects = {
     name: "Ilira",
     desc: "Kanban Board with persistent Google SSO sessions, built in database transactions, and state mangement with Redux. Board orientation persists in the database.",
     url: "https://ilira.app",
-    github: "Private",
+    github: "https://github.com/tvo007/ili2-client",
     imageSrc:
       "https://res.cloudinary.com/ddj5orpun/image/upload/v1670117121/screencapture-ilira-app-projects-1ac3c684-47a5-40b6-a4b7-a287d2577d0e-2022-12-03-17_24_50_yewjfj.png",
     //placeholder
